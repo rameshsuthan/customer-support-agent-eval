@@ -1,0 +1,69 @@
+[
+  {
+    "trace_id": "01a19dd4-b168-71bd-a78b-06a752704fe0",
+    "model_run_id": "01a19dd4-b16d-7369-9c71-92571822feec",
+    "error": "FireworksAPIError(\"Error code: 500 - {'error': {'object': 'error', 'type': 'internal_server_error', 'code': 'internal_server_error', 'message': 'server had an error while processing your request, please retry again after a brief wait'}}\")Traceback (most recent call last):\n\n\n  File \"/Users/ramesh/code/mastering-agentic-ai/week4-project/.venv/lib/python3.12/site-packages/langchain_fireworks/chat_models.py\", line 1421, in _generate\n    response = _completion_with_retry(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n\n\n  File \"/Users/ramesh/code/mastering-agentic-ai/week4-project/.venv/lib/python3.12/site-packages/langchain_fireworks/chat_models.py\", line 931, in _completion_with_retry\n    return _call()\n           ^^^^^^^\n\n\n  File \"/Users/ramesh/code/mastering-agentic-ai/week4-project/.venv/lib/python3.12/site-packages/tenacity/__init__.py\", line 404, in wrapped_f\n    return copy(f, *args, **kw)\n           ^^^^^^^^^^^^^^^^^^^^\n\n\n  File \"/Users/ramesh/code/mastering-agentic-ai/week4-project/.venv/lib/python3.12/site-packages/tenacity/__init__.py\", line 550, in __call__\n    do = self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n  File \"/Users/ramesh/code/mastering-agentic-ai/week4-project/.venv/lib/python3.12/site-packages/tenacity/__init__.py\", line 440, in iter\n    result = action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^\n\n\n  File \"/Users/ramesh/code/mastering-agentic-ai/week4-project/.venv/lib/python3.12/site-packages/tenacity/__init__.py\", line 482, ",
+    "generation_metadata": [
+      {
+        "generation_info": null,
+        "response_metadata": {
+          "body": {
+            "error": {
+              "code": "internal_server_error",
+              "message": "server had an error while processing your request, please retry again after a brief wait",
+              "object": "error",
+              "type": "internal_server_error"
+            }
+          },
+          "headers": {
+            "alt-svc": "h3=\":443\"; ma=86400",
+            "cf-cache-status": "DYNAMIC",
+            "cf-ray": "a545b255bb52f784-IAD",
+            "connection": "keep-alive",
+            "content-length": "191",
+            "content-type": "application/json",
+            "date": "Mon, 02 Nov 2026 19:55:27 GMT",
+            "server": "cloudflare",
+            "vary": "Origin, Origin",
+            "x-request-id": "chatcmpl-49a3a12ee1024cce94bf18df720fb53f"
+          },
+          "status_code": 500
+        }
+      }
+    ]
+  },
+  {
+    "trace_id": "01a19dd1-52be-725f-81e1-3a9eb8c8d895",
+    "model_run_id": "01a19dd1-52c3-7775-85eb-3db5dce14953",
+    "error": "",
+    "generation_metadata": [
+      {
+        "generation_info": {
+          "finish_reason": "length",
+          "logprobs": null
+        },
+        "response_metadata": {
+          "finish_reason": "length",
+          "logprobs": null,
+          "model_name": "accounts/fireworks/models/muse-spark-open",
+          "model_provider": "fireworks",
+          "system_fingerprint": "",
+          "token_usage": {
+            "completion_tokens": 1024,
+            "completion_tokens_details": {
+              "reasoning_tokens": 1021
+            },
+            "output_tokens_details": {
+              "reasoning_tokens": 1021
+            },
+            "prompt_tokens": 288,
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            },
+            "total_tokens": 1312
+          }
+        }
+      }
+    ]
+  }
+]

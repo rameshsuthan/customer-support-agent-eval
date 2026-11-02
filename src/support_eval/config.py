@@ -13,7 +13,7 @@ class Settings(BaseModel):
     project: str = 'week4-support-muse-spark'
     endpoint: str = 'https://api.smith.langchain.com'
     workspace_id: str = ''
-    budget_usd: float = Field(default=3.0, gt=0, le=3.0)
+    budget_usd: float = Field(default=3.0, gt=0, le=5.0)
     max_tokens: int = Field(default=1024, gt=0, le=4096)
     temperature: float = 0.0
     timeout_seconds: float = 60.0

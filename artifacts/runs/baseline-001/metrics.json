@@ -1,0 +1,84 @@
+{
+  "case_count": 100,
+  "accuracy": 0.91,
+  "macro_f1": 0.926638252754789,
+  "valid_response_rate": 0.96,
+  "p95_latency_seconds": 16.861890468411726,
+  "known_cost_usd": 0.23935465,
+  "cost_coverage": 0.98,
+  "mean_cost_usd": null,
+  "per_category": {
+    "order_status": {
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1": 0.967741935483871,
+      "support": 16
+    },
+    "refund_request": {
+      "precision": 0.8518518518518519,
+      "recall": 0.9583333333333334,
+      "f1": 0.9019607843137255,
+      "support": 24
+    },
+    "product_issue": {
+      "precision": 1.0,
+      "recall": 0.65,
+      "f1": 0.7878787878787878,
+      "support": 20
+    },
+    "account_help": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 20
+    },
+    "other": {
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "f1": 0.975609756097561,
+      "support": 20
+    }
+  },
+  "confusion_matrix": {
+    "order_status": {
+      "order_status": 15,
+      "refund_request": 0,
+      "product_issue": 0,
+      "account_help": 0,
+      "other": 0,
+      "error": 1
+    },
+    "refund_request": {
+      "order_status": 0,
+      "refund_request": 23,
+      "product_issue": 0,
+      "account_help": 0,
+      "other": 0,
+      "error": 1
+    },
+    "product_issue": {
+      "order_status": 0,
+      "refund_request": 4,
+      "product_issue": 13,
+      "account_help": 0,
+      "other": 1,
+      "error": 2
+    },
+    "account_help": {
+      "order_status": 0,
+      "refund_request": 0,
+      "product_issue": 0,
+      "account_help": 20,
+      "other": 0,
+      "error": 0
+    },
+    "other": {
+      "order_status": 0,
+      "refund_request": 0,
+      "product_issue": 0,
+      "account_help": 0,
+      "other": 20,
+      "error": 0
+    }
+  }
+}

@@ -95,24 +95,40 @@ def write_json(path: Path, data: dict):
 def ledger_spend(path: Path) -> float:
     if not path.exists():
         return 0.
-    pending = set()
-    total = Decimal(0)
+    attempts = {}
     for line in path.read_text().splitlines():
         event = json.loads(line)
-        if event['event'] == 'reserved':
-            pending.add(event['attempt_id'])
-        elif event['event'] == 'settled':
+        key = event['attempt_id']
+        kind = event['event']
+        if kind == 'reserved':
+            if key in attempts:
+                raise ValueError('Duplicate reservation')
+            bound = Decimal(str(event['bound_usd']))
+            if not bound.is_finite() or bound < 0:
+                raise ValueError('Invalid reservation')
+            attempts[key] = {'bound': bound, 'state': 'pending'}
+        elif kind == 'settled':
+            if key not in attempts or attempts[key]['state'] != 'pending':
+                raise ValueError('Invalid settlement')
             cost = event.get('cost_usd')
+            state = attempts[key]
             if cost is None:
-                raise ValueError('Unresolved usage in ledger; reconcile billing before another paid call')
-            amount = Decimal(str(cost))
-            if not amount.is_finite() or amount < 0:
-                raise ValueError('Invalid cost in ledger')
-            total += amount
-            pending.discard(event['attempt_id'])
-    if pending:
-        raise ValueError('Unresolved reservation from interrupted attempt; reconcile before continuing')
-    return float(total)
+                state['state'] = 'unknown'
+            else:
+                amount = Decimal(str(cost))
+                if not amount.is_finite() or amount < 0:
+                    raise ValueError('Invalid cost in ledger')
+                state.update(state='settled', amount=amount)
+        elif kind == 'bounded_unknown':
+            if key not in attempts or attempts[key]['state'] != 'unknown' or not event.get('reason'):
+                raise ValueError('Bounded usage requires a documented settled unknown attempt')
+            attempts[key].update(state='bounded', amount=attempts[key]['bound'])
+        else:
+            raise ValueError('Unknown ledger event')
+    if any(a['state'] in ('pending', 'unknown') for a in attempts.values()):
+        raise ValueError('Unresolved usage or reservation; reconcile before continuing')
+    # Includes conservative reservations explicitly retained for unknown usage.
+    return float(sum((a['amount'] for a in attempts.values()), Decimal(0)))
 
 
 def ensure_langsmith_dataset(cases: pd.DataFrame, manifest: dict, client) -> str:
@@ -134,7 +150,7 @@ def ensure_langsmith_dataset(cases: pd.DataFrame, manifest: dict, client) -> str
 
 
 def run_experiment(agent, cases: pd.DataFrame, run_spec: RunSpec, settings: Settings,
-                   output_dir: Path, *, client=None, pilot: bool = False) -> pd.DataFrame:
+                   output_dir: Path, *, client=None, pilot: bool = False, resume: bool = False) -> pd.DataFrame:
     """client=None is for offline injected agents. Paid entrypoints must supply a client.
 
     Reserve the entire model input context at uncached pricing plus the output cap.
@@ -161,11 +177,37 @@ def run_experiment(agent, cases: pd.DataFrame, run_spec: RunSpec, settings: Sett
         ledger = output_dir / 'usage.jsonl'
         spend = ledger_spend(ledger)
         folder = output_dir / 'runs' / run_spec.run_id
-        folder.mkdir(parents=True, exist_ok=False)
+        rows = []
+        if resume:
+            previous = json.loads((folder / 'manifest.json').read_text())
+            if RunSpec.model_validate(previous) != run_spec:
+                raise ValueError('Resume spec differs from saved run spec')
+            if previous['status'] != 'incomplete':
+                raise ValueError('Only incomplete runs may resume')
+            results_path = folder / 'results.jsonl'
+            rows = [json.loads(line) for line in results_path.read_text().splitlines()] if results_path.exists() else []
+            ids = [row['case_id'] for row in rows]
+            if len(ids) != len(set(ids)) or not set(ids).issubset(run_spec.case_ids):
+                raise ValueError('Invalid partial result IDs')
+            for row in rows:
+                if row['run_id'] != run_spec.run_id or digest([row['ticket_text'], row['expected_category']]) != run_spec.case_fingerprints[row['case_id']]:
+                    raise ValueError('Partial results differ from run spec')
+            reservations = [json.loads(line) for line in ledger.read_text().splitlines()
+                            if json.loads(line).get('event') == 'reserved'
+                            and json.loads(line).get('run_id') == run_spec.run_id]
+            ledger_ids = [event['case_id'] for event in reservations]
+            if sorted(ledger_ids) != sorted(ids) or previous.get('attempted_count') != len(rows):
+                raise ValueError('Partial results disagree with usage ledger or saved attempted count')
+            append_json(folder / 'resume_history.jsonl', previous)
+        else:
+            folder.mkdir(parents=True, exist_ok=False)
         manifest = {**run_spec.model_dump(), 'status': 'running', 'expected_count': len(cases)}
+        if resume:
+            manifest['previous_experiments'] = previous.get('previous_experiments', []) + ([previous['experiment_name']] if previous.get('experiment_name') else [])
         write_json(folder / 'manifest.json', manifest)
         lookup = cases.set_index('case_id').to_dict('index')
-        rows, seen = [], set()
+        seen = {row['case_id'] for row in rows}
+        remaining = cases[~cases.case_id.isin(seen)]
         halted = False
         # Muse Spark Open context bound from the model card; no guessed tokenizer needed.
         bound = (1_048_576 * run_spec.prices['input_per_million']
@@ -226,17 +268,26 @@ def run_experiment(agent, cases: pd.DataFrame, run_spec: RunSpec, settings: Sett
             return row
 
         try:
-            if client is not None:
+            if remaining.empty:
+                if resume and previous.get('experiment_name'):
+                    manifest['experiment_name'] = previous['experiment_name']
+            elif client is not None:
                 if not run_spec.langsmith_dataset_id:
                     raise ValueError('A verified LangSmith dataset is required')
                 with tracing_context(enabled=True, client=client, project_name=settings.project):
-                    experiment = client.evaluate(target, data=run_spec.langsmith_dataset_id,
+                    data = run_spec.langsmith_dataset_id
+                    if resume:
+                        data = [e for e in client.list_examples(dataset_id=run_spec.langsmith_dataset_id)
+                                if e.inputs['case_id'] not in seen]
+                        if len(data) != len(remaining) or {e.inputs['case_id'] for e in data} != set(remaining.case_id):
+                            raise ValueError('Continuation dataset does not match remaining cases')
+                    experiment = client.evaluate(target, data=data,
                                                  experiment_prefix=run_spec.run_id, max_concurrency=1,
                                                  metadata=run_spec.model_dump(), blocking=True)
                     manifest['experiment_name'] = experiment.experiment_name
             else:
                 with tracing_context(enabled=False):
-                    for case in cases.to_dict('records'):
+                    for case in remaining.to_dict('records'):
                         target({'case_id': case['case_id'], 'ticket_text': case['ticket_text']})
                         if halted:
                             break

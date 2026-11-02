@@ -4,7 +4,7 @@ A local evaluation of Meta Muse Spark Open on Fireworks, with LangGraph classifi
 
 ## Current status
 
-The offline dataset, classifier, experiment runner, and scoring tools are implemented. Python 3.12 and dependencies are installed in `.venv`. All 100 labels are reviewed and dataset v1 is frozen. The five-ticket integration pilot completed with five valid/correct responses and estimated inference cost $0.0132835. LangSmith child traces and usage were inspected. The full baseline stopped after 9 attempts (8 valid responses, then a Fireworks HTTP 500 with unknown usage). Its results are preserved but incomplete. Usage reconciliation, explicit recovery, improvement analysis, final workbook and demo remain pending.
+The offline dataset, classifier, experiment runner, and scoring tools are implemented. Python 3.12 and dependencies are installed in `.venv`. All 100 labels are reviewed and dataset v1 is frozen. The five-ticket integration pilot completed with five valid/correct responses and estimated inference cost $0.0132835. LangSmith child traces and usage were inspected. The full baseline is complete: 100 cases, 91% accuracy, 0.927 macro F1, and 96% valid responses. Five routing mismatches and four failed responses are preserved. Known baseline cost is $0.23935465; two HTTP 500 calls have unknown costs covered by conservative reservations. The approved budget ceiling is now $5. See [failure analysis](reports/failure_analysis.md). The proposed prompt edit awaits substantive review; the improved experiment, final workbook and demo remain pending.
 
 ## Start locally
 
@@ -49,12 +49,12 @@ We use the CSV's fixed texts as our candidate dataset; all labels remain subject
 
 ## Paid-run safeguards and limits
 
-- Proposed Fireworks allocation: **$3** of the user's $15 credit. LangSmith billing is separate.
+- Approved Fireworks ceiling: **$5** (raised from $3 after two unknown-usage HTTP 500 failures) of the user's $15 credit. LangSmith billing is separate.
 - Sequential calls and no automatic SDK retries.
 - A project-wide lock prevents simultaneous runner instances. Each attempted call reserves budget before sending and records usage afterward.
-- Reservations conservatively use the model's entire input context plus the configured output cap; a pending/unpriced attempt blocks later calls until billing is reconciled.
+- Reservations conservatively use the model's entire input context plus the configured output cap; a pending/unpriced attempt blocks later calls until reviewed. An explicit `bounded_unknown` ledger event can retain the full original reservation as conservative budget exposure while leaving actual cost unknown.
 - Actual cost estimates use the saved price snapshot and reported usage, avoiding cache/reasoning double counting. They are not provider invoices or an account-wide spend limit.
-- An existing run ID cannot be reused. Interrupted runs remain incomplete; recovery is explicit.
+- Completed run IDs cannot be reused. Explicit `resume=True` accepts only an identical incomplete run specification, checks saved results against the usage ledger, and calls only unattempted cases. Prior errors remain scored failures. Continuations use separate LangSmith experiments; local combined results define full-run metrics.
 - Analysis cells read saved files and never call the model. Full metrics require all expected cases and validate result identity against the run specification.
 
 The pilot must verify current model cap/billing behavior before scaling. No result is represented as correct merely because a provider call failed, and costs with missing usage are not reported as zero.

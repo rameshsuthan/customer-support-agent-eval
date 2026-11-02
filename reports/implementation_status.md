@@ -6,7 +6,7 @@
 - Source files pinned to a GitHub revision and checked with SHA-256 hashes.
 - Workbook/CSV reconciliation: 150 vs 100 cases; 29 vs 8 supplied failures; only one matching ticket among 100 shared IDs.
 - Independent dataset-review/freezing code, Fireworks/LangGraph classifier, experiment runner, usage ledger, and scoring/comparison tools.
-- 35 passing offline tests, including source-label integrity, missing-case scoring, cross-run identity and an unverified-integration gate.
+- 41 passing offline tests, including source-label integrity, missing-case scoring, cross-run identity and an unverified-integration gate.
 - Notebook executed in a fresh kernel with all paid switches off.
 - Both service credentials configured locally; values never included in output or Git.
 
@@ -31,9 +31,9 @@
 
 ## Pending
 
-- Baseline `baseline-001` stopped after 9 attempts: 8 valid responses and 1 Fireworks HTTP 500. Usage for the failed request is unknown; the guard blocks further calls until reviewed.
+- Baseline `baseline-001` is complete: 100 unique cases, 91% accuracy, 0.927 macro F1, 96% valid responses. Two unknown-cost HTTP 500 failures remain in results; both full reservations count toward the user-approved $5 ceiling.
 - Completed pilot `pilot-001`: 5/5 valid and correct, estimated cost $0.0132835; nested model trace verified.
-- Full baseline, reviewed failure analysis, one independently developed prompt improvement and full rerun.
+- Human review of the completed failure analysis, followed by the proposed focused prompt change and full rerun.
 - Final workbook, measured report, trace evidence and narrated demo. Do not treat the current notebook as an executed evaluation submission.
 
 ## Decisions and review record
@@ -60,3 +60,5 @@ Final review batch: t096–t099 approved as `other` / `sale_inquiry`. Frozen dat
 Provider setup resolution: optional LANGSMITH_WORKSPACE_ID contained a non-UUID value. Omitting it successfully authenticated to the key’s default workspace, so the optional field was cleared. Configuration now validates nonempty workspace IDs as UUIDs; regression test failed before the fix and the complete 35-test suite passes.
 
 Baseline interruption: course-t026 returned Fireworks HTTP 500 in 0.659 seconds with no usage. 91 cases were not attempted. Known estimated cost across the pilot and successful baseline calls: $0.03089405; this excludes unknown cost for the failed request and is not a complete billed total. No full-baseline accuracy is reported. Official Fireworks usage documentation notes delayed aggregation, so an immediate dashboard total would not establish that the failed call was free.
+
+Latest checkpoint: baseline recovered through two separate LangSmith continuation experiments without repeating any attempted case. Known project cost estimate $0.25263815, excluding two unknown-cost requests. Conservative ledger exposure $2.88278215. All100 cases validated against frozen references;41 offline tests pass. Historical interruption notes above are retained as chronology. No inference session remains active.

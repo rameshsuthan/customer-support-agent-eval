@@ -81,3 +81,72 @@ def test_unverified_full_run_blocked_before_provider(tmp_path):
     with pytest.raises(ValueError, match='integration'):
         run_experiment(FakeAgent(result=good()), cases(), spec(), Settings(), tmp_path, client=object())
     assert not (tmp_path/'usage.jsonl').exists()
+
+
+def test_resume_preserves_failed_row_and_charges_unknown_bound(tmp_path):
+    from support_eval.evaluation import append_json, ledger_spend
+    run_experiment(FakeAgent(failure=RuntimeError()), cases(), spec(), Settings(), tmp_path)
+    ledger = tmp_path/'usage.jsonl'
+    reservation = json.loads(ledger.read_text().splitlines()[0])
+    append_json(ledger, dict(event='bounded_unknown', attempt_id=reservation['attempt_id'],
+                            reason='Keep full reservation for unknown provider usage'))
+    assert ledger_spend(ledger) == reservation['bound_usd']
+    before = (tmp_path/'runs/baseline-test/results.jsonl').read_text()
+    frame = run_experiment(FakeAgent(result=good()), cases(), spec(), Settings(), tmp_path, resume=True)
+    assert len(frame) == 2
+    assert frame.iloc[0].status == 'error'
+    assert (tmp_path/'runs/baseline-test/results.jsonl').read_text().startswith(before)
+    assert json.loads((tmp_path/'runs/baseline-test/manifest.json').read_text())['status'] == 'complete'
+
+
+def test_resume_rejects_changed_prompt(tmp_path):
+    from support_eval.evaluation import append_json
+    run_experiment(FakeAgent(result=good()), cases(), spec(), Settings(), tmp_path)
+    changed = spec().model_copy(update={'prompt_hash': 'changed'})
+    with pytest.raises(ValueError, match='spec'):
+        run_experiment(FakeAgent(result=good()), cases(), changed, Settings(), tmp_path, resume=True)
+
+
+def test_unknown_bound_requires_a_settled_unknown_attempt(tmp_path):
+    from support_eval.evaluation import append_json, ledger_spend
+    ledger = tmp_path/'usage.jsonl'
+    append_json(ledger, dict(event='bounded_unknown', attempt_id='nonexistent', reason='review'))
+    with pytest.raises(ValueError):
+        ledger_spend(ledger)
+
+
+def test_resume_rejects_lost_result_with_settled_ledger(tmp_path):
+    run_experiment(FakeAgent(result=good()), cases(), spec(), Settings(), tmp_path)
+    folder = tmp_path/'runs/baseline-test'
+    manifest = json.loads((folder/'manifest.json').read_text())
+    manifest['status'] = 'incomplete'
+    (folder/'manifest.json').write_text(json.dumps(manifest))
+    (folder/'results.jsonl').write_text((folder/'results.jsonl').read_text().splitlines()[0]+'\n')
+    with pytest.raises(ValueError, match='ledger'):
+        run_experiment(FakeAgent(result=good()), cases(), spec(), Settings(), tmp_path, resume=True)
+
+
+def test_resume_with_all_cases_attempted_skips_client_evaluate(tmp_path):
+    from pydantic import SecretStr
+    from support_eval.evaluation import append_json
+    class LastFails:
+        calls = 0
+        def invoke(self, data):
+            self.calls += 1
+            if self.calls == 2:
+                raise RuntimeError()
+            return good()
+    run_experiment(LastFails(), cases(), spec(), Settings(), tmp_path)
+    ledger = tmp_path/'usage.jsonl'
+    reservation = json.loads(ledger.read_text().splitlines()[-2])
+    append_json(ledger, dict(event='bounded_unknown', attempt_id=reservation['attempt_id'], reason='review'))
+    settings = Settings(integration_verified=True, fireworks_api_key=SecretStr('fake'), langsmith_api_key=SecretStr('fake'))
+    frame = run_experiment(FakeAgent(failure=AssertionError()), cases(), spec(), settings, tmp_path, client=object(), resume=True)
+    assert len(frame) == 2
+    assert json.loads((tmp_path/'runs/baseline-test/manifest.json').read_text())['status'] == 'complete'
+
+
+def test_budget_accepts_approved_five_dollar_ceiling():
+    assert Settings(budget_usd=5).budget_usd == 5
+    with pytest.raises(ValueError):
+        Settings(budget_usd=5.01)

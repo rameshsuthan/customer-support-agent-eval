@@ -225,9 +225,12 @@
     "checked_date": "2026-11-02"
   },
   "langsmith_dataset_id": "892c6169-ac98-4d08-b4be-8363f254cc11",
-  "status": "incomplete",
+  "status": "complete",
   "expected_count": 100,
-  "stop_reason": "Missing usage or exceeded reservation",
-  "experiment_name": "baseline-001-3bb4c666",
-  "attempted_count": 9
+  "previous_experiments": [
+    "baseline-001-3bb4c666",
+    "baseline-001-6300a5dd"
+  ],
+  "experiment_name": "baseline-001-f5cdbad6",
+  "attempted_count": 100
 }

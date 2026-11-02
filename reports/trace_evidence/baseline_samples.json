@@ -1,0 +1,107 @@
+[
+  {
+    "case_id": "course-t060",
+    "expected": "account_help",
+    "predicted": "account_help",
+    "explanation": "Customer is unable to log in due to password being rejected even after a reset.",
+    "status": "ok",
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/efa627bd-6463-4b5e-9044-6d1319cecbaa/trace/01a19dc0-e5a7-739c-ad49-fa36fd8480eb/run/01a19dc0-e5a7-739c-ad49-fa36fd8480eb?start_time=2026-11-02T19%3A33%3A47.047468%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t040",
+    "expected": "product_issue",
+    "predicted": "product_issue",
+    "explanation": "The coffee maker arrived broken with a cracked carafe, which is a defective product issue.",
+    "status": "ok",
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/f512963c-b927-4465-911c-4f2324bac698/trace/01a19ddc-d242-7031-aaec-ecee96a45717/run/01a19ddc-d242-7031-aaec-ecee96a45717?start_time=2026-11-02T20%3A04%3A17.090021%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t080",
+    "expected": "other",
+    "predicted": "other",
+    "explanation": "The customer is asking a general shipping policy question about Canada, which does not relate to a specific order's tracking, refund, product defect, or account help.",
+    "status": "ok",
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/f512963c-b927-4465-911c-4f2324bac698/trace/01a19ddd-74fe-7e4b-b9ce-cd876a604b22/run/01a19ddd-74fe-7e4b-b9ce-cd876a604b22?start_time=2026-11-02T20%3A04%3A58.750933%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t000",
+    "expected": "order_status",
+    "predicted": "order_status",
+    "explanation": "Customer is asking for the location and tracking update of their blender order placed 5 days ago.",
+    "status": "ok",
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/f512963c-b927-4465-911c-4f2324bac698/trace/01a19ddf-500b-7133-b980-1cfdd58f298e/run/01a19ddf-500b-7133-b980-1cfdd58f298e?start_time=2026-11-02T20%3A07%3A00.363384%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t004",
+    "expected": "refund_request",
+    "predicted": "refund_request",
+    "explanation": "The customer explicitly requests their money back for an order that never arrived.",
+    "status": "ok",
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/f512963c-b927-4465-911c-4f2324bac698/trace/01a19de0-6e7f-75e6-9fd0-6015745de3e5/run/01a19de0-6e7f-75e6-9fd0-6015745de3e5?start_time=2026-11-02T20%3A08%3A13.695454%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t056",
+    "expected": "product_issue",
+    "predicted": "product_issue",
+    "explanation": "Item arrived with crushed packaging and missing manual, indicating incomplete/damaged delivery despite functioning product.",
+    "status": "ok",
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/f512963c-b927-4465-911c-4f2324bac698/trace/01a19de0-e184-765e-9acf-5db70a4e52f6/run/01a19de0-e184-765e-9acf-5db70a4e52f6?start_time=2026-11-02T20%3A08%3A43.140771%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t058",
+    "expected": "product_issue",
+    "predicted": null,
+    "explanation": null,
+    "status": "invalid",
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/f512963c-b927-4465-911c-4f2324bac698/trace/01a19de1-31d4-70d1-8084-011689f4e193/run/01a19de1-31d4-70d1-8084-011689f4e193?start_time=2026-11-02T20%3A09%3A03.700056%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "length",
+        "logprobs": null
+      }
+    ]
+  }
+]
