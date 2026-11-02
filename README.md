@@ -4,7 +4,7 @@ A local evaluation of Meta Muse Spark Open on Fireworks, with LangGraph classifi
 
 ## Current status
 
-The offline dataset, classifier, experiment runner, and scoring tools are implemented. Python 3.12 and dependencies are installed in `.venv`. **No paid runs or measured project results exist yet.** Human review is in progress; inspect the CSV for the current count. The integration pilot, full baseline, improvement experiment, final workbook and demo remain pending.
+The offline dataset, classifier, experiment runner, and scoring tools are implemented. Python 3.12 and dependencies are installed in `.venv`. All 100 labels are reviewed and dataset v1 is frozen. The five-ticket integration pilot completed with five valid/correct responses and estimated inference cost $0.0132835. LangSmith child traces and usage were inspected. The full baseline stopped after 9 attempts (8 valid responses, then a Fireworks HTTP 500 with unknown usage). Its results are preserved but incomplete. Usage reconciliation, explicit recovery, improvement analysis, final workbook and demo remain pending.
 
 ## Start locally
 

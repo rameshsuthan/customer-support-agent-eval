@@ -1,0 +1,104 @@
+{
+  "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/919d63a7-869c-479e-a2fd-bff9e5a92a86/trace/01a19dbe-4219-79ea-b7a0-a1721ae218aa/run/01a19dbe-4219-79ea-b7a0-a1721ae218aa?start_time=2026-11-02T19%3A30%3A54.105661%2B00%3A00",
+  "metadata": {
+    "case_id": "course-t004",
+    "correct": true,
+    "dataset_hash": "5bc7d9fc33fb90235f53e76a32d1627411943145e3d7707bcc5fc710dccb255d",
+    "expected_category": "refund_request",
+    "prompt_version": "baseline",
+    "run_id": "pilot-001"
+  },
+  "runs": [
+    {
+      "name": "Target",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 276,
+      "completion_tokens": 510
+    },
+    {
+      "name": "LangGraph",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 276,
+      "completion_tokens": 510
+    },
+    {
+      "name": "classify",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 276,
+      "completion_tokens": 510
+    },
+    {
+      "name": "RunnableSequence",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 276,
+      "completion_tokens": 510
+    },
+    {
+      "name": "RunnableParallel<raw>",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 276,
+      "completion_tokens": 510
+    },
+    {
+      "name": "ChatFireworks",
+      "run_type": "llm",
+      "error_present": false,
+      "prompt_tokens": 276,
+      "completion_tokens": 510
+    },
+    {
+      "name": "RunnableWithFallbacks",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "name": "RunnableAssign<parsed,parsing_error>",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "name": "RunnableParallel<parsed,parsing_error>",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "name": "RunnableSequence",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "name": "RunnableLambda",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "name": "PydanticOutputParser",
+      "run_type": "parser",
+      "error_present": false,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "name": "RunnableLambda",
+      "run_type": "chain",
+      "error_present": false,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    }
+  ]
+}

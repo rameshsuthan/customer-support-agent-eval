@@ -1,0 +1,20 @@
+{
+  "pilot": "pilot-001",
+  "verified": true,
+  "prices": {
+    "input_per_million": 1.25,
+    "cached_input_per_million": 0.15,
+    "output_per_million": 4.25,
+    "checked_date": "2026-11-02"
+  },
+  "model": "accounts/fireworks/models/muse-spark-open",
+  "context_length": 1048576,
+  "max_tokens": 1024,
+  "structured_responses": 5,
+  "trace_checked": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/919d63a7-869c-479e-a2fd-bff9e5a92a86/trace/01a19dbe-4219-79ea-b7a0-a1721ae218aa/run/01a19dbe-4219-79ea-b7a0-a1721ae218aa?start_time=2026-11-02T19%3A30%3A54.105661%2B00%3A00",
+  "usage_note": "Reasoning tokens are a subset of output_tokens; no extra addition. Reported totals reconcile for all five calls.",
+  "pricing_source": "https://fireworks.ai/models/fireworks/muse-spark-open",
+  "cap_source": "https://docs.fireworks.ai/api-reference/post-chatcompletions",
+  "cost_usd": 0.0132835,
+  "billing_status": "Estimate from published rates and API usage, not an invoice reconciliation."
+}

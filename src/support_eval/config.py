@@ -1,8 +1,9 @@
 """Configuration, with credentials excluded from stored experiment settings."""
 import os
+from uuid import UUID
 from pathlib import Path
 from dotenv import dotenv_values
-from pydantic import BaseModel, Field, SecretStr
+from pydantic import BaseModel, Field, SecretStr, field_validator
 
 
 class Settings(BaseModel):
@@ -17,6 +18,16 @@ class Settings(BaseModel):
     temperature: float = 0.0
     timeout_seconds: float = 60.0
     integration_verified: bool = False
+
+    @field_validator('workspace_id')
+    @classmethod
+    def validate_workspace_id(cls, value: str) -> str:
+        if not value.strip():
+            return ''
+        try:
+            return str(UUID(value.strip()))
+        except ValueError:
+            raise ValueError('workspace_id must be a UUID, or blank for the key default') from None
 
     def require_credentials(self):
         missing = [name for name in ('fireworks_api_key', 'langsmith_api_key')

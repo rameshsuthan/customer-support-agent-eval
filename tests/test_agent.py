@@ -53,3 +53,8 @@ def test_settings_do_not_serialize_keys():
     settings = Settings(fireworks_api_key='private-fireworks', langsmith_api_key='private-langsmith')
     assert 'private-' not in repr(settings)
     assert 'private-' not in settings.model_dump_json()
+
+
+def test_invalid_workspace_id_rejected_locally():
+    with pytest.raises(ValidationError, match='workspace'):
+        Settings(workspace_id='workspace display name')

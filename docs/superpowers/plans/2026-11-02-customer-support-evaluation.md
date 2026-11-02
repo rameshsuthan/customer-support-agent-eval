@@ -183,4 +183,4 @@ Recommended: implement inline in this session using `superpowers:executing-plans
 
 ## Implementation checkpoint — November 2
 
-Environment, source reconciliation, review table, classifier, runner, scoring and notebook are implemented offline. 34 tests pass. Eight case labels are human reviewed; the dataset is not yet frozen. Live pilot, baseline, failure analysis, improved run and final submission are pending. See `reports/implementation_status.md`.
+Environment, source reconciliation, review table, classifier, runner, scoring and notebook are implemented offline. 34 tests pass. All 100 case labels are human reviewed; dataset v1 is frozen. The live pilot passed; baseline stopped at a provider HTTP 500 after 9 attempts. Usage reconciliation, baseline completion, failure analysis, improved run and final submission remain pending. See `reports/implementation_status.md`.

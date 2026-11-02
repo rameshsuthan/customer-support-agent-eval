@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "sha256": "6393654a0bbfb44b3d28dffac7f720c8e857f480dd1480fca4d27cbdbf0efe1d",
+  "file": "tickets_v1.jsonl",
+  "case_count": 100,
+  "category_counts": {
+    "refund_request": 24,
+    "product_issue": 20,
+    "account_help": 20,
+    "other": 20,
+    "order_status": 16
+  },
+  "exclusions": [],
+  "sources": [
+    "results_v1.csv"
+  ]
+}

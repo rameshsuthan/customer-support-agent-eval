@@ -1,0 +1,13 @@
+{
+  "fireworks_http_status": 200,
+  "requested_model_listed": true,
+  "model_matches": [
+    {
+      "id": "accounts/fireworks/models/muse-spark-open",
+      "object": "model",
+      "owned_by": "fireworks",
+      "context_length": 1048576
+    }
+  ],
+  "langsmith_error_type": "LangSmithAuthError"
+}

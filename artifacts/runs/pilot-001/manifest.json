@@ -1,0 +1,42 @@
+{
+  "run_id": "pilot-001",
+  "prompt_version": "baseline",
+  "prompt_hash": "a0e63d5410a0ad8040dacf7a2460b9c3a0202ec583d5e7ff9587b14fba5699bb",
+  "dataset_version": "v1-pilot",
+  "dataset_hash": "5bc7d9fc33fb90235f53e76a32d1627411943145e3d7707bcc5fc710dccb255d",
+  "case_ids": [
+    "course-t000",
+    "course-t004",
+    "course-t040",
+    "course-t060",
+    "course-t080"
+  ],
+  "case_fingerprints": {
+    "course-t000": "d4fc10f22a5366389c0a2a35f6a945fc3e71158f3119ad3ad6a1ea59f11f812f",
+    "course-t004": "d54ba206d53dc6ffdab56ba20720f4ca6f5be0843271b6020e7589bbc6664450",
+    "course-t040": "c8be2c766bef0354ba85c49b5a351b0129ede88626748de1f5184d40ff9908de",
+    "course-t060": "05a2a2d60efddc62764e29ad59cb9b6893d16835c55dfb3221f617692d3cc72d",
+    "course-t080": "621f3d5b724e40e86a154ddc138c878dda0ecf62dbc102eb3f92ebb6a440d848"
+  },
+  "model": "accounts/fireworks/models/muse-spark-open",
+  "settings_fingerprint": "889fa36d4ae2422c3b62b3ee49096f55c007f6d138a7bec54bc57b9823066dca",
+  "model_settings": {
+    "model": "accounts/fireworks/models/muse-spark-open",
+    "max_tokens": 1024,
+    "temperature": 0.0,
+    "timeout_seconds": 60.0,
+    "max_retries": 0,
+    "structured_method": "json_schema"
+  },
+  "prices": {
+    "input_per_million": 1.25,
+    "cached_input_per_million": 0.15,
+    "output_per_million": 4.25,
+    "checked_date": "2026-11-02"
+  },
+  "langsmith_dataset_id": "af009937-b331-4232-a4ba-4bc49a536018",
+  "status": "complete",
+  "expected_count": 5,
+  "experiment_name": "pilot-001-46d1d8a6",
+  "attempted_count": 5
+}
