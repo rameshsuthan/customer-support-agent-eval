@@ -1,0 +1,23 @@
+Customer Support Agent Evaluation
+This is a walkthrough of Ramesh's Week Four customer support agent evaluation. The project asks whether an explicit routing rule can improve an agent's decisions without hiding failures. The classifier uses Muse Spark Open through Fireworks, with a single LangGraph node. It returns one support category and a short explanation for each customer ticket. LangSmith records the individual model calls. This presentation uses saved project evidence and a standard synthetic narrator. All measurements shown come from our own experiments, not the starter scores.
+
+Define success before measuring
+The dataset contains one hundred supplied ticket texts. Ramesh reviewed every label before evaluation, and the project froze those decisions so predictions could not influence the answers. Five categories cover order status, refunds, product issues, account help and other requests. A pass requires a valid output that exactly matches the reviewed category. Wrong categories, incomplete responses and provider errors remain failures in the one hundred case denominator. Expected labels stay outside the model messages, preventing reference-answer leakage.
+
+A deliberate business distinction
+The policy distinguishes two similar situations. An undelivered order with an explicit request for money back goes to the refund team, rather than order status. A damaged product stays with the product team, even when the customer asks for a refund or rejects a replacement. These are ownership decisions, not universal intent labels. Packaging damage and missing instructions also belong to product issues. The supplied labels were corrected where necessary, and descriptive tags were kept separate from the five routing categories.
+
+Original baseline: 91% accuracy
+The original baseline achieved ninety one percent accuracy. Four damaged laptop tickets were routed to refunds, because the prompt described both categories without saying which one took priority. One packaging and manual complaint went to other. Two responses reached the output limit, and two calls failed with provider server errors and no reported usage. All nine failures were preserved. Interrupted runs resumed only unattempted tickets. This avoided replacing difficult or failed outputs with retries until they happened to pass.
+
+Separate the two interventions
+We first changed only the output limit, from one thousand twenty four to two thousand forty eight tokens. The unchanged prompt then scored ninety six percent, with all responses valid. Next, we kept that higher limit fixed and added one priority instruction. Damaged product requests remain product issues even if the customer explicitly asks for a refund. Missing delivery refund requests still go to refunds. The model, dataset and other settings stayed fixed. Therefore, the controlled prompt comparison is ninety six to ninety eight percent.
+
+Inspect a targeted fix
+Consider ticket forty four: My laptop arrived damaged and I want a full refund, not a replacement. The control predicted refund request, which conflicts with the reviewed policy. With the priority rule, the agent returned product issue. Its explanation explicitly referred to the damaged laptop and said that the product category applies despite the refund request. All four targeted damaged laptop variants were fixed. The four missing delivery refund cases also remained correct. Inspected LangSmith model child traces support these individual results.
+
+Keep the regressions visible
+The prompt change was not a perfect improvement. Ticket fifty eight, about packaging and missing instructions, and ticket eighty three, about shipping policy, became invalid responses. Both used the full two thousand forty eight output tokens, with two thousand forty five reported as reasoning. The model traces confirm that generation stopped because of length. The paired result is four fixes, two regressions and ninety four unchanged correct cases. Accuracy improved, but valid responses fell from one hundred to ninety eight percent.
+
+Results, costs and limitations
+The improved run met the accuracy, macro F one, latency and mean cost targets, but missed the one hundred percent validity target. Its ninety fifth percentile latency was thirteen point two one seconds. Known project cost including the pilot was about seventy nine cents, excluding two original calls with unknown usage. Conservative reserves kept exposure near three dollars forty two, within the five dollar ceiling. These are related synthetic cases reused for diagnosis and evaluation. The results do not prove production readiness or independent generalization. The repository contains the workbook, executed notebook, prompts, results and solution document.

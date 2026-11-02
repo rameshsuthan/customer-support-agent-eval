@@ -1,0 +1,12 @@
+{
+  "full_decode": "passed",
+  "duration_seconds": 300.71,
+  "video": "H.264, 1920x1080, 12fps",
+  "audio": "AAC, mono, 24kHz",
+  "mean_volume_db": -16.1,
+  "max_volume_db": -1.6,
+  "visual_review": "Decoded frame from each of8chapters inspected; captions and footer legible.",
+  "captions": "24 timed narration cues; burned in and separate SRT",
+  "narration": "macOS Samantha synthetic voice; no user voice imitation",
+  "hosting": "Repository MP4; not uploaded to Loom"
+}

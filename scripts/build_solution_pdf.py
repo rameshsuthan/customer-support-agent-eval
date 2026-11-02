@@ -82,7 +82,7 @@ h('Cost, limitations and attribution')
 p('Known project cost including the pilot is $0.79069535, excluding two original requests with unknown usage. Retaining both full-context reserves gives $3.42083935 conservative exposure under the approved $5 ceiling. These reserves are not measured charges.')
 p('The same synthetic set was used for diagnosis and reevaluation. Single runs cannot fully separate intervention effects from generation variability or provider conditions. Further work would test response completion on independent tickets. No extra experiment, LLM judge, deployment or external submission was performed.','SmallBody')
 p('Source tickets and baseline category descriptions: The Gen Academy, repository revision ef517b274cf86a2c4fa8ae72fdc89b3dce80f41d. The source workbook has 150 cases while the CSV has 100; only one shared ID has identical text. Supplied scores were not reused. This follows the Customer Support track; the separate Own Use Case checklist does not define this project\'s scope.','SmallBody')
-p('AI assistance was used for implementation, analysis and documentation. Ramesh made the ground-truth and routing-policy decisions and approved the experiment design. The demo recording remains to be completed.','SmallBody')
+p('AI assistance was used for implementation, analysis and documentation. Ramesh made the ground-truth and routing-policy decisions and approved the experiment design. A presentation-style video with synthetic narration is included in reports/video. Loom hosting remains pending if required by the portal.','SmallBody')
 def footer(canvas,doc):
     canvas.setFont('Helvetica',8);canvas.setFillColor(colors.HexColor('#52606D'))
     canvas.drawString(54,31,'Week 4 | Customer Support Agent Evaluation')

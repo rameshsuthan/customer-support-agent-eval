@@ -1,0 +1,95 @@
+1
+00:00:00,000 --> 00:00:11,750
+This is a walkthrough of Ramesh's Week Four customer support agent evaluation. The project asks whether an explicit routing rule can improve an agent's decisions without hiding failures.
+
+2
+00:00:11,750 --> 00:00:23,250
+The classifier uses Muse Spark Open through Fireworks, with a single LangGraph node. It returns one support category and a short explanation for each customer ticket.
+
+3
+00:00:23,250 --> 00:00:36,917
+LangSmith records the individual model calls. This presentation uses saved project evidence and a standard synthetic narrator. All measurements shown come from our own experiments, not the starter scores.
+
+4
+00:00:36,917 --> 00:00:49,583
+The dataset contains one hundred supplied ticket texts. Ramesh reviewed every label before evaluation, and the project froze those decisions so predictions could not influence the answers.
+
+5
+00:00:49,583 --> 00:01:01,917
+Five categories cover order status, refunds, product issues, account help and other requests. A pass requires a valid output that exactly matches the reviewed category.
+
+6
+00:01:01,917 --> 00:01:15,333
+Wrong categories, incomplete responses and provider errors remain failures in the one hundred case denominator. Expected labels stay outside the model messages, preventing reference-answer leakage.
+
+7
+00:01:15,333 --> 00:01:26,083
+The policy distinguishes two similar situations. An undelivered order with an explicit request for money back goes to the refund team, rather than order status.
+
+8
+00:01:26,083 --> 00:01:37,667
+A damaged product stays with the product team, even when the customer asks for a refund or rejects a replacement. These are ownership decisions, not universal intent labels.
+
+9
+00:01:37,667 --> 00:01:50,000
+Packaging damage and missing instructions also belong to product issues. The supplied labels were corrected where necessary, and descriptive tags were kept separate from the five routing categories.
+
+10
+00:01:50,000 --> 00:02:03,000
+The original baseline achieved ninety one percent accuracy. Four damaged laptop tickets were routed to refunds, because the prompt described both categories without saying which one took priority.
+
+11
+00:02:03,000 --> 00:02:13,500
+One packaging and manual complaint went to other. Two responses reached the output limit, and two calls failed with provider server errors and no reported usage.
+
+12
+00:02:13,500 --> 00:02:25,167
+All nine failures were preserved. Interrupted runs resumed only unattempted tickets. This avoided replacing difficult or failed outputs with retries until they happened to pass.
+
+13
+00:02:25,167 --> 00:02:37,417
+We first changed only the output limit, from one thousand twenty four to two thousand forty eight tokens. The unchanged prompt then scored ninety six percent, with all responses valid.
+
+14
+00:02:37,417 --> 00:02:49,250
+Next, we kept that higher limit fixed and added one priority instruction. Damaged product requests remain product issues even if the customer explicitly asks for a refund.
+
+15
+00:02:49,250 --> 00:03:02,000
+Missing delivery refund requests still go to refunds. The model, dataset and other settings stayed fixed. Therefore, the controlled prompt comparison is ninety six to ninety eight percent.
+
+16
+00:03:02,000 --> 00:03:14,500
+Consider ticket forty four: My laptop arrived damaged and I want a full refund, not a replacement. The control predicted refund request, which conflicts with the reviewed policy.
+
+17
+00:03:14,500 --> 00:03:26,667
+With the priority rule, the agent returned product issue. Its explanation explicitly referred to the damaged laptop and said that the product category applies despite the refund request.
+
+18
+00:03:26,667 --> 00:03:39,583
+All four targeted damaged laptop variants were fixed. The four missing delivery refund cases also remained correct. Inspected LangSmith model child traces support these individual results.
+
+19
+00:03:39,583 --> 00:03:52,167
+The prompt change was not a perfect improvement. Ticket fifty eight, about packaging and missing instructions, and ticket eighty three, about shipping policy, became invalid responses.
+
+20
+00:03:52,167 --> 00:04:03,583
+Both used the full two thousand forty eight output tokens, with two thousand forty five reported as reasoning. The model traces confirm that generation stopped because of length.
+
+21
+00:04:03,583 --> 00:04:15,500
+The paired result is four fixes, two regressions and ninety four unchanged correct cases. Accuracy improved, but valid responses fell from one hundred to ninety eight percent.
+
+22
+00:04:15,500 --> 00:04:29,500
+The improved run met the accuracy, macro F one, latency and mean cost targets, but missed the one hundred percent validity target. Its ninety fifth percentile latency was thirteen point two one seconds.
+
+23
+00:04:29,500 --> 00:04:43,750
+Known project cost including the pilot was about seventy nine cents, excluding two original calls with unknown usage. Conservative reserves kept exposure near three dollars forty two, within the five dollar ceiling.
+
+24
+00:04:43,750 --> 00:05:00,667
+These are related synthetic cases reused for diagnosis and evaluation. The results do not prove production readiness or independent generalization. The repository contains the workbook, executed notebook, prompts, results and solution document.

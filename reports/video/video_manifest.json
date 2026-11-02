@@ -1,0 +1,56 @@
+{
+  "duration_seconds": 300.6666666666667,
+  "resolution": "1920x1080",
+  "fps": 12,
+  "voice": "macOS Samantha, synthetic",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Customer Support Agent Evaluation",
+      "start_seconds": 0,
+      "end_seconds": 36.916666666666664
+    },
+    {
+      "chapter": 2,
+      "title": "Define success before measuring",
+      "start_seconds": 36.916666666666664,
+      "end_seconds": 75.33333333333333
+    },
+    {
+      "chapter": 3,
+      "title": "A deliberate business distinction",
+      "start_seconds": 75.33333333333333,
+      "end_seconds": 109.99999999999999
+    },
+    {
+      "chapter": 4,
+      "title": "Original baseline: 91% accuracy",
+      "start_seconds": 109.99999999999999,
+      "end_seconds": 145.16666666666666
+    },
+    {
+      "chapter": 5,
+      "title": "Separate the two interventions",
+      "start_seconds": 145.16666666666666,
+      "end_seconds": 182.0
+    },
+    {
+      "chapter": 6,
+      "title": "Inspect a targeted fix",
+      "start_seconds": 182.0,
+      "end_seconds": 219.58333333333331
+    },
+    {
+      "chapter": 7,
+      "title": "Keep the regressions visible",
+      "start_seconds": 219.58333333333331,
+      "end_seconds": 255.49999999999997
+    },
+    {
+      "chapter": 8,
+      "title": "Results, costs and limitations",
+      "start_seconds": 255.49999999999997,
+      "end_seconds": 300.6666666666667
+    }
+  ]
+}

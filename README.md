@@ -6,7 +6,7 @@ A local evaluation of Meta Muse Spark Open on Fireworks, with LangGraph classifi
 
 **Customer Support core track.** Start with the [solution PDF](reports/customer_support_solution.pdf), then open the [workbook](reports/customer_support_evaluation.xlsx) and [executed notebook](notebooks/customer_support_evaluation.ipynb). Download the workbook to inspect its sheets.
 
-**Loom recording:** pending. The repository contains the [rehearsal script](reports/DEMO_SCRIPT.md) and [submission checklist](reports/SUBMISSION_CHECKLIST.md). Add the recording URL here before submitting.
+**Demo video:** [Watch or download the narrated MP4](reports/video/customer_support_demo.mp4) (5:01, 1080p, standard synthetic voice, captions included). [Transcript](reports/video/transcript.txt) and [SRT captions](reports/video/customer_support_demo.srt) are also available. This is a presentation-style walkthrough of saved project evidence. Loom hosting is still pending if the submission portal requires a Loom URL. See the [submission checklist](reports/SUBMISSION_CHECKLIST.md).
 
 | Run | Output limit | Accuracy | Valid responses |
 |---|---:|---:|---:|
@@ -23,7 +23,7 @@ All runs use the same 100 human-reviewed tickets. The controlled prompt comparis
 
 Known project cost including the pilot: **$0.79069535**, excluding two unknown-cost original requests. Conservative exposure: **$3.42083935** under the approved $5 ceiling. All 42 tests and fresh-kernel analysis replay passed. The notebook's paid flags default to false; saved-results analysis needs no API keys.
 
-AI assistance supported implementation, analysis and documentation. Ramesh reviewed the ground truth and routing policy and approved the experimental design. No demo recording or external course submission is claimed yet.
+AI assistance supported implementation, analysis and documentation. Ramesh reviewed the ground truth and routing policy and approved the experimental design. A synthetically narrated demo video is included. External course submission has not been performed.
 
 ## Start locally
 
