@@ -19,7 +19,7 @@ Add an explicit priority rule for damaged/defective/wrong/not-as-described produ
 
 Hypothesis: correct the four damaged-laptop/refund cases without regressing the four missing-delivery/refund cases (t004–t007). A plausible regression is over-routing ordinary refund requests to product_issue. Reevaluate all 100 cases; record all regressions. Remaining packaging/manual and infrastructure failures may persist. Any improvement in HTTP 500 cases must not be attributed to the prompt.
 
-The proposed prompt is saved in prompts/improved.txt but has not been run. Failure annotations and this hypothesis await Ramesh's substantive review. Do not mark them human approved from the earlier ground-truth approval alone.
+Ramesh approved the routing-failure interpretations and the focused prompt experiment. He additionally approved raising the output limit to2048, with a separate unchanged-prompt control at2048 before the improved prompt run. The original1024-token baseline is preserved. Packaging/manual wording remains unchanged.
 
 ## Individual failures
 

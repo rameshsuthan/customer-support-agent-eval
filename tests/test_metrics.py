@@ -82,3 +82,19 @@ def test_identical_label_edits_in_both_frames_rejected():
     edited.loc[0,'expected_category'] = 'other'
     with pytest.raises(ValueError, match='label'):
         compare_runs(edited, edited.assign(run_id='v2'), a,b)
+
+
+def test_output_limit_comparison_requires_only_limit_change():
+    from support_eval.evaluation import digest
+    a,b=specs()
+    settings={**a.model_settings, 'max_tokens':2048}
+    b=b.model_copy(update={'prompt_hash':a.prompt_hash,'model_settings':settings,'settings_fingerprint':digest(settings)})
+    with pytest.raises(ValueError,match='settings'):
+        compare_runs(rows(),rows().assign(run_id='v2'),a,b)
+    assert len(compare_runs(rows(),rows().assign(run_id='v2'),a,b,comparison='output_limit'))==4
+    with pytest.raises(ValueError,match='prompt'):
+        compare_runs(rows(),rows().assign(run_id='v2'),a,b.model_copy(update={'prompt_hash':'changed'}),comparison='output_limit')
+    settings['temperature']=.5
+    b=b.model_copy(update={'model_settings':settings,'settings_fingerprint':digest(settings)})
+    with pytest.raises(ValueError,match='settings'):
+        compare_runs(rows(),rows().assign(run_id='v2'),a,b,comparison='output_limit')

@@ -335,8 +335,22 @@ def score_results(results: pd.DataFrame, run_spec: RunSpec) -> dict:
 
 
 def compare_runs(baseline: pd.DataFrame, improved: pd.DataFrame,
-                  baseline_spec: RunSpec, improved_spec: RunSpec) -> pd.DataFrame:
-    for field in ('dataset_version', 'dataset_hash', 'case_ids', 'model', 'settings_fingerprint', 'prices'):
+                  baseline_spec: RunSpec, improved_spec: RunSpec, *, comparison: str = "prompt") -> pd.DataFrame:
+    if comparison not in ('prompt', 'output_limit'):
+        raise ValueError('Unknown comparison type')
+    for spec in (baseline_spec, improved_spec):
+        if digest(spec.model_settings) != spec.settings_fingerprint:
+            raise ValueError('Invalid settings fingerprint')
+    if comparison == 'output_limit':
+        if baseline_spec.prompt_hash != improved_spec.prompt_hash:
+            raise ValueError('Output-limit comparison requires identical prompt')
+        a = {k:v for k,v in baseline_spec.model_settings.items() if k != 'max_tokens'}
+        b = {k:v for k,v in improved_spec.model_settings.items() if k != 'max_tokens'}
+        if a != b:
+            raise ValueError('Other model settings changed')
+    elif baseline_spec.settings_fingerprint != improved_spec.settings_fingerprint:
+        raise ValueError('Incompatible settings_fingerprint')
+    for field in ('dataset_version', 'dataset_hash', 'case_ids', 'model', 'prices'):
         if getattr(baseline_spec, field) != getattr(improved_spec, field):
             raise ValueError(f'Incompatible {field}')
     validate_results(baseline, baseline_spec)

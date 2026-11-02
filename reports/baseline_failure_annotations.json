@@ -26,7 +26,7 @@
     "elapsed_seconds": 19.374354125000536,
     "failure_group": "output_budget_exhaustion",
     "annotation": "Output reached1024 tokens,1021 reasoning tokens; no valid structured prediction. Trace confirmation retained separately.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "reviewed_user_approved_higher_limit_control"
   },
   {
     "case_id": "course-t026",
@@ -45,7 +45,7 @@
     "elapsed_seconds": 0.6593806659802794,
     "failure_group": "provider_http_500",
     "annotation": "Provider trace confirms HTTP 500; no classification or usage. Actual cost remains unknown.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "provider_error_verified_in_trace"
   },
   {
     "case_id": "course-t044",
@@ -74,7 +74,7 @@
     "elapsed_seconds": 14.444536249968223,
     "failure_group": "damaged_product_refund_priority",
     "annotation": "Model prioritizes explicit refund wording. Reviewed policy prioritizes damaged product. Baseline prompt omits the tie-break rule.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "human_approved_interpretation"
   },
   {
     "case_id": "course-t045",
@@ -103,7 +103,7 @@
     "elapsed_seconds": 16.171288374986034,
     "failure_group": "damaged_product_refund_priority",
     "annotation": "Model prioritizes explicit refund wording. Reviewed policy prioritizes damaged product. Baseline prompt omits the tie-break rule.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "human_approved_interpretation"
   },
   {
     "case_id": "course-t046",
@@ -132,7 +132,7 @@
     "elapsed_seconds": 14.778962625015993,
     "failure_group": "damaged_product_refund_priority",
     "annotation": "Model prioritizes explicit refund wording. Reviewed policy prioritizes damaged product. Baseline prompt omits the tie-break rule.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "human_approved_interpretation"
   },
   {
     "case_id": "course-t047",
@@ -161,7 +161,7 @@
     "elapsed_seconds": 16.22394054196775,
     "failure_group": "damaged_product_refund_priority",
     "annotation": "Model prioritizes explicit refund wording. Reviewed policy prioritizes damaged product. Baseline prompt omits the tie-break rule.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "human_approved_interpretation"
   },
   {
     "case_id": "course-t055",
@@ -180,7 +180,7 @@
     "elapsed_seconds": 3.435913207998965,
     "failure_group": "provider_http_500",
     "annotation": "Provider trace confirms HTTP 500; no classification or usage. Actual cost remains unknown.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "provider_error_verified_in_trace"
   },
   {
     "case_id": "course-t058",
@@ -209,7 +209,7 @@
     "elapsed_seconds": 19.278965374978725,
     "failure_group": "output_budget_exhaustion",
     "annotation": "Output reached1024 tokens,1021 reasoning tokens; no valid structured prediction. Trace confirmation retained separately.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "reviewed_user_approved_higher_limit_control"
   },
   {
     "case_id": "course-t059",
@@ -238,6 +238,6 @@
     "elapsed_seconds": 19.73986870801309,
     "failure_group": "packaging_manual_scope",
     "annotation": "Model treats damaged packaging and missing manual as general feedback because the item works. Reviewed product_issue includes these concerns; baseline definition omits them.",
-    "annotation_review_status": "pending"
+    "annotation_review_status": "human_approved_interpretation"
   }
 ]

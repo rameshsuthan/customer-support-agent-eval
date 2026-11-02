@@ -1,0 +1,106 @@
+[
+  {
+    "case_id": "course-t083",
+    "status": "invalid",
+    "predicted_category": null,
+    "expected_category": "other",
+    "explanation": null,
+    "usage": {
+      "input_tokens": 350,
+      "output_tokens": 2048,
+      "total_tokens": 2398,
+      "input_token_details": {
+        "cache_read": 320
+      },
+      "output_token_details": {
+        "reasoning": 2045
+      }
+    },
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/a6ba6566-3751-417b-95cc-0de7e769182f/trace/01a19e04-22c2-7033-897f-a03f33089609/run/01a19e04-22c2-7033-897f-a03f33089609?start_time=2026-11-02T20%3A47%3A13.602106%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "length",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t044",
+    "status": "ok",
+    "predicted_category": "product_issue",
+    "expected_category": "product_issue",
+    "explanation": "Ticket reports a damaged laptop, so product_issue applies even though a refund is requested.",
+    "usage": {
+      "input_tokens": 343,
+      "output_tokens": 504,
+      "total_tokens": 847,
+      "input_token_details": {
+        "cache_read": 320
+      },
+      "output_token_details": {
+        "reasoning": 464
+      }
+    },
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/a6ba6566-3751-417b-95cc-0de7e769182f/trace/01a19e09-9f23-7382-b0cb-aa4c729c45d0/run/01a19e09-9f23-7382-b0cb-aa4c729c45d0?start_time=2026-11-02T20%3A53%3A13.123715%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t004",
+    "status": "ok",
+    "predicted_category": "refund_request",
+    "expected_category": "refund_request",
+    "explanation": "Customer reports a missing/undelivered order and explicitly requests money back, which maps to refund_request per the routing rules.",
+    "usage": {
+      "input_tokens": 340,
+      "output_tokens": 631,
+      "total_tokens": 971,
+      "input_token_details": {
+        "cache_read": 320
+      },
+      "output_token_details": {
+        "reasoning": 583
+      }
+    },
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/a6ba6566-3751-417b-95cc-0de7e769182f/trace/01a19e09-bc2e-79f8-b8b7-6c7ea946141f/run/01a19e09-bc2e-79f8-b8b7-6c7ea946141f?start_time=2026-11-02T20%3A53%3A20.558649%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "stop",
+        "logprobs": null
+      }
+    ]
+  },
+  {
+    "case_id": "course-t058",
+    "status": "invalid",
+    "predicted_category": null,
+    "expected_category": "product_issue",
+    "explanation": null,
+    "usage": {
+      "input_tokens": 356,
+      "output_tokens": 2048,
+      "total_tokens": 2404,
+      "input_token_details": {
+        "cache_read": 320
+      },
+      "output_token_details": {
+        "reasoning": 2045
+      }
+    },
+    "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/a6ba6566-3751-417b-95cc-0de7e769182f/trace/01a19e0a-ab33-763b-b0b5-df8431fac948/run/01a19e0a-ab33-763b-b0b5-df8431fac948?start_time=2026-11-02T20%3A54%3A21.747641%2B00%3A00",
+    "model_child_count": 1,
+    "generation_info": [
+      {
+        "finish_reason": "length",
+        "logprobs": null
+      }
+    ]
+  }
+]

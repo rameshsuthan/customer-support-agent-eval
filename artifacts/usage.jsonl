@@ -210,3 +210,403 @@
 {"event": "settled", "attempt_id": "864d27b1-781c-44ef-a730-f2f7c3407b28", "cost_usd": 0.00236165}
 {"event": "reserved", "attempt_id": "97e6be17-0f43-45e5-b0e5-ad8f194bc153", "run_id": "baseline-001", "case_id": "course-t069", "bound_usd": 1.315072}
 {"event": "settled", "attempt_id": "97e6be17-0f43-45e5-b0e5-ad8f194bc153", "cost_usd": 0.00221815}
+{"event": "reserved", "attempt_id": "aac8f730-a286-4492-bba9-c8f6c281b32f", "run_id": "baseline-2048-001", "case_id": "course-t038", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "aac8f730-a286-4492-bba9-c8f6c281b32f", "cost_usd": 0.00201465}
+{"event": "reserved", "attempt_id": "87c5d303-f157-4e2c-990b-dbc0de9781f1", "run_id": "baseline-2048-001", "case_id": "course-t010", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "87c5d303-f157-4e2c-990b-dbc0de9781f1", "cost_usd": 0.0033029}
+{"event": "reserved", "attempt_id": "e22d11fb-e9c3-41ab-96bf-a26e73d01f3f", "run_id": "baseline-2048-001", "case_id": "course-t035", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "e22d11fb-e9c3-41ab-96bf-a26e73d01f3f", "cost_usd": 0.00229465}
+{"event": "reserved", "attempt_id": "4de2491e-bee0-403f-808f-2f8516c64929", "run_id": "baseline-2048-001", "case_id": "course-t098", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "4de2491e-bee0-403f-808f-2f8516c64929", "cost_usd": 0.00247115}
+{"event": "reserved", "attempt_id": "4c5b6775-c832-4bff-8f3d-5fe69a850526", "run_id": "baseline-2048-001", "case_id": "course-t092", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "4c5b6775-c832-4bff-8f3d-5fe69a850526", "cost_usd": 0.0024459}
+{"event": "reserved", "attempt_id": "2aa56903-f6a5-4c15-be8f-9206ee01812b", "run_id": "baseline-2048-001", "case_id": "course-t018", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2aa56903-f6a5-4c15-be8f-9206ee01812b", "cost_usd": 0.00207965}
+{"event": "reserved", "attempt_id": "4976357b-23e6-4fce-a078-40d7eced75e1", "run_id": "baseline-2048-001", "case_id": "course-t060", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "4976357b-23e6-4fce-a078-40d7eced75e1", "cost_usd": 0.0025809}
+{"event": "reserved", "attempt_id": "c501fc96-47c0-4d5d-af7f-45fbd4341ecd", "run_id": "baseline-2048-001", "case_id": "course-t039", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "c501fc96-47c0-4d5d-af7f-45fbd4341ecd", "cost_usd": 0.00149065}
+{"event": "reserved", "attempt_id": "58d41d00-6000-468a-bc5d-e1f6c332142f", "run_id": "baseline-2048-001", "case_id": "course-t026", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "58d41d00-6000-468a-bc5d-e1f6c332142f", "cost_usd": 0.0029044}
+{"event": "reserved", "attempt_id": "0c53ee7a-dba8-48cf-ba17-32b668ab59fa", "run_id": "baseline-2048-001", "case_id": "course-t094", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "0c53ee7a-dba8-48cf-ba17-32b668ab59fa", "cost_usd": 0.0032204}
+{"event": "reserved", "attempt_id": "62259827-3428-4709-b158-da12348d8d1f", "run_id": "baseline-2048-001", "case_id": "course-t086", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "62259827-3428-4709-b158-da12348d8d1f", "cost_usd": 0.0019974}
+{"event": "reserved", "attempt_id": "6913738b-a81d-415c-82db-41c69caf590d", "run_id": "baseline-2048-001", "case_id": "course-t012", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "6913738b-a81d-415c-82db-41c69caf590d", "cost_usd": 0.0020199}
+{"event": "reserved", "attempt_id": "117467d5-b359-4119-8d7e-fd77b45f902d", "run_id": "baseline-2048-001", "case_id": "course-t099", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "117467d5-b359-4119-8d7e-fd77b45f902d", "cost_usd": 0.0027439}
+{"event": "reserved", "attempt_id": "10ca77cb-1362-4ac2-b4f8-7d26e670f09d", "run_id": "baseline-2048-001", "case_id": "course-t074", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "10ca77cb-1362-4ac2-b4f8-7d26e670f09d", "cost_usd": 0.0026979}
+{"event": "reserved", "attempt_id": "5aaab6b2-235f-4f16-8864-c6f81caaa4d2", "run_id": "baseline-2048-001", "case_id": "course-t001", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "5aaab6b2-235f-4f16-8864-c6f81caaa4d2", "cost_usd": 0.00229115}
+{"event": "reserved", "attempt_id": "62e27e71-4f94-4fb3-a5e8-ac7e173f9cf2", "run_id": "baseline-2048-001", "case_id": "course-t011", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "62e27e71-4f94-4fb3-a5e8-ac7e173f9cf2", "cost_usd": 0.0021474}
+{"event": "reserved", "attempt_id": "a2082ba2-8ba4-400e-9f90-a0c4cd2dfdf1", "run_id": "baseline-2048-001", "case_id": "course-t030", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "a2082ba2-8ba4-400e-9f90-a0c4cd2dfdf1", "cost_usd": 0.0026624}
+{"event": "reserved", "attempt_id": "68fdea45-d349-41bd-8878-fb9c9aae3c43", "run_id": "baseline-2048-001", "case_id": "course-t021", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "68fdea45-d349-41bd-8878-fb9c9aae3c43", "cost_usd": 0.00215415}
+{"event": "reserved", "attempt_id": "0fbe64f7-acf7-44af-bd13-9a40993948ec", "run_id": "baseline-2048-001", "case_id": "course-t042", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "0fbe64f7-acf7-44af-bd13-9a40993948ec", "cost_usd": 0.0022944}
+{"event": "reserved", "attempt_id": "42d79622-f0b2-49ca-b069-2bc143473ff1", "run_id": "baseline-2048-001", "case_id": "course-t015", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "42d79622-f0b2-49ca-b069-2bc143473ff1", "cost_usd": 0.0025009}
+{"event": "reserved", "attempt_id": "b80c56af-4b8c-4eaf-bace-4e96c4264181", "run_id": "baseline-2048-001", "case_id": "course-t067", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b80c56af-4b8c-4eaf-bace-4e96c4264181", "cost_usd": 0.0028024}
+{"event": "reserved", "attempt_id": "ae89ad5a-f348-4300-a733-b428c09c66e8", "run_id": "baseline-2048-001", "case_id": "course-t075", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ae89ad5a-f348-4300-a733-b428c09c66e8", "cost_usd": 0.0014789}
+{"event": "reserved", "attempt_id": "7502afaa-08e7-42be-bcff-9080cd64098a", "run_id": "baseline-2048-001", "case_id": "course-t082", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "7502afaa-08e7-42be-bcff-9080cd64098a", "cost_usd": 0.0027469}
+{"event": "reserved", "attempt_id": "5f01c07d-76fb-4254-b6d7-7b669001f45d", "run_id": "baseline-2048-001", "case_id": "course-t095", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "5f01c07d-76fb-4254-b6d7-7b669001f45d", "cost_usd": 0.0026079}
+{"event": "reserved", "attempt_id": "cd651c01-931f-403f-8362-4712ab651f26", "run_id": "baseline-2048-001", "case_id": "course-t048", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "cd651c01-931f-403f-8362-4712ab651f26", "cost_usd": 0.0031024}
+{"event": "reserved", "attempt_id": "b0845faf-7f93-46df-9794-6f77b89da977", "run_id": "baseline-2048-001", "case_id": "course-t020", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b0845faf-7f93-46df-9794-6f77b89da977", "cost_usd": 0.00221965}
+{"event": "reserved", "attempt_id": "5b147156-46f0-40e5-8bd5-e198ca7908e4", "run_id": "baseline-2048-001", "case_id": "course-t065", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "5b147156-46f0-40e5-8bd5-e198ca7908e4", "cost_usd": 0.00246415}
+{"event": "reserved", "attempt_id": "ae116b82-7570-43fb-b29a-d4278050c4a0", "run_id": "baseline-2048-001", "case_id": "course-t062", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ae116b82-7570-43fb-b29a-d4278050c4a0", "cost_usd": 0.0021034}
+{"event": "reserved", "attempt_id": "eb671a64-7b0d-4de4-9213-92e8efe12b8e", "run_id": "baseline-2048-001", "case_id": "course-t063", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "eb671a64-7b0d-4de4-9213-92e8efe12b8e", "cost_usd": 0.00231115}
+{"event": "reserved", "attempt_id": "e5615068-5ea1-40e2-a6f9-11b47141fd48", "run_id": "baseline-2048-001", "case_id": "course-t007", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "e5615068-5ea1-40e2-a6f9-11b47141fd48", "cost_usd": 0.0028219}
+{"event": "reserved", "attempt_id": "4dd3e433-b8fe-4a51-ae01-df79f0668cd6", "run_id": "baseline-2048-001", "case_id": "course-t073", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "4dd3e433-b8fe-4a51-ae01-df79f0668cd6", "cost_usd": 0.00192765}
+{"event": "reserved", "attempt_id": "691d483f-74cf-47fc-bce5-556c20986039", "run_id": "baseline-2048-001", "case_id": "course-t064", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "691d483f-74cf-47fc-bce5-556c20986039", "cost_usd": 0.00213765}
+{"event": "reserved", "attempt_id": "1c9e5e32-c51d-43d3-9e34-c13d45c70484", "run_id": "baseline-2048-001", "case_id": "course-t078", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "1c9e5e32-c51d-43d3-9e34-c13d45c70484", "cost_usd": 0.00222415}
+{"event": "reserved", "attempt_id": "2f34abae-0ef7-46c0-8f10-0efa8dc77b6c", "run_id": "baseline-2048-001", "case_id": "course-t085", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2f34abae-0ef7-46c0-8f10-0efa8dc77b6c", "cost_usd": 0.0022719}
+{"event": "reserved", "attempt_id": "ba2fef15-feef-4533-8d2f-070cc3c3ab45", "run_id": "baseline-2048-001", "case_id": "course-t051", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ba2fef15-feef-4533-8d2f-070cc3c3ab45", "cost_usd": 0.0027349}
+{"event": "reserved", "attempt_id": "b3424ddd-e40e-458c-a5a9-e2029d902586", "run_id": "baseline-2048-001", "case_id": "course-t016", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b3424ddd-e40e-458c-a5a9-e2029d902586", "cost_usd": 0.0022249}
+{"event": "reserved", "attempt_id": "7654db7f-1c1c-43e1-9d78-54f1378c6755", "run_id": "baseline-2048-001", "case_id": "course-t079", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "7654db7f-1c1c-43e1-9d78-54f1378c6755", "cost_usd": 0.00267215}
+{"event": "reserved", "attempt_id": "5b6eff45-3cba-4c99-869e-ea2d8fa0a742", "run_id": "baseline-2048-001", "case_id": "course-t019", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "5b6eff45-3cba-4c99-869e-ea2d8fa0a742", "cost_usd": 0.00194165}
+{"event": "reserved", "attempt_id": "8e7d9316-7f41-45b9-8f5b-dcf2241768c4", "run_id": "baseline-2048-001", "case_id": "course-t005", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "8e7d9316-7f41-45b9-8f5b-dcf2241768c4", "cost_usd": 0.00284965}
+{"event": "reserved", "attempt_id": "d148c8ab-ef8f-45c7-a477-6e0eb3a11039", "run_id": "baseline-2048-001", "case_id": "course-t036", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d148c8ab-ef8f-45c7-a477-6e0eb3a11039", "cost_usd": 0.0017029}
+{"event": "reserved", "attempt_id": "a5cbbab3-5e6e-473e-9789-9d5d52d93994", "run_id": "baseline-2048-001", "case_id": "course-t055", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "a5cbbab3-5e6e-473e-9789-9d5d52d93994", "cost_usd": 0.0020544}
+{"event": "reserved", "attempt_id": "519cfe74-54bd-4f98-999f-04079af99ff9", "run_id": "baseline-2048-001", "case_id": "course-t068", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "519cfe74-54bd-4f98-999f-04079af99ff9", "cost_usd": 0.0025759}
+{"event": "reserved", "attempt_id": "b40b7255-8dfb-4d61-803e-7a5faabfed3d", "run_id": "baseline-2048-001", "case_id": "course-t014", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b40b7255-8dfb-4d61-803e-7a5faabfed3d", "cost_usd": 0.00263665}
+{"event": "reserved", "attempt_id": "e59e8627-a522-40e2-9654-c8deb2fa3683", "run_id": "baseline-2048-001", "case_id": "course-t034", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "e59e8627-a522-40e2-9654-c8deb2fa3683", "cost_usd": 0.00224165}
+{"event": "reserved", "attempt_id": "f64e864d-c6ac-4d2d-87a7-cc801d39f91a", "run_id": "baseline-2048-001", "case_id": "course-t088", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "f64e864d-c6ac-4d2d-87a7-cc801d39f91a", "cost_usd": 0.0028484}
+{"event": "reserved", "attempt_id": "a945211f-f2d0-4063-8202-406d1d9383fa", "run_id": "baseline-2048-001", "case_id": "course-t022", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "a945211f-f2d0-4063-8202-406d1d9383fa", "cost_usd": 0.0025414}
+{"event": "reserved", "attempt_id": "76a2ed27-61c0-483d-ba2a-0af884e70603", "run_id": "baseline-2048-001", "case_id": "course-t003", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "76a2ed27-61c0-483d-ba2a-0af884e70603", "cost_usd": 0.0017174}
+{"event": "reserved", "attempt_id": "ad457072-19ae-417e-b991-c22d03f78e4a", "run_id": "baseline-2048-001", "case_id": "course-t090", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ad457072-19ae-417e-b991-c22d03f78e4a", "cost_usd": 0.0023759}
+{"event": "reserved", "attempt_id": "7194f6f6-901e-4e42-a4de-7b1943239957", "run_id": "baseline-2048-001", "case_id": "course-t047", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "7194f6f6-901e-4e42-a4de-7b1943239957", "cost_usd": 0.00316565}
+{"event": "reserved", "attempt_id": "79d8b75c-6dfc-414a-9228-d52aef1efcb0", "run_id": "baseline-2048-001", "case_id": "course-t061", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "79d8b75c-6dfc-414a-9228-d52aef1efcb0", "cost_usd": 0.00262515}
+{"event": "reserved", "attempt_id": "717acc82-3bea-48f8-aa52-bfa7cfb0c841", "run_id": "baseline-2048-001", "case_id": "course-t089", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "717acc82-3bea-48f8-aa52-bfa7cfb0c841", "cost_usd": 0.00263265}
+{"event": "reserved", "attempt_id": "497bb51c-5f3a-44f6-8fb4-e9968029f0eb", "run_id": "baseline-2048-001", "case_id": "course-t043", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "497bb51c-5f3a-44f6-8fb4-e9968029f0eb", "cost_usd": 0.0022909}
+{"event": "reserved", "attempt_id": "2c090e34-a826-46b3-901c-4d065b4d8488", "run_id": "baseline-2048-001", "case_id": "course-t025", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2c090e34-a826-46b3-901c-4d065b4d8488", "cost_usd": 0.00299565}
+{"event": "reserved", "attempt_id": "d5e08d57-cac3-4609-841a-bf6af8871f80", "run_id": "baseline-2048-001", "case_id": "course-t072", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d5e08d57-cac3-4609-841a-bf6af8871f80", "cost_usd": 0.00194515}
+{"event": "reserved", "attempt_id": "59a3f6d2-c12f-422e-ad85-01c2184d8984", "run_id": "baseline-2048-001", "case_id": "course-t066", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "59a3f6d2-c12f-422e-ad85-01c2184d8984", "cost_usd": 0.0026749}
+{"event": "reserved", "attempt_id": "902360d8-b884-448c-b5a7-d9498c16db74", "run_id": "baseline-2048-001", "case_id": "course-t093", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "902360d8-b884-448c-b5a7-d9498c16db74", "cost_usd": 0.0024409}
+{"event": "reserved", "attempt_id": "0f94f445-03e1-43ca-a520-94d0d1300969", "run_id": "baseline-2048-001", "case_id": "course-t083", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "0f94f445-03e1-43ca-a520-94d0d1300969", "cost_usd": 0.0034079}
+{"event": "reserved", "attempt_id": "3fd89550-2dc1-4610-821b-2028c2b7a77d", "run_id": "baseline-2048-001", "case_id": "course-t006", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3fd89550-2dc1-4610-821b-2028c2b7a77d", "cost_usd": 0.00263915}
+{"event": "reserved", "attempt_id": "9b94dd55-43b3-4507-be8e-74d4dc6df333", "run_id": "baseline-2048-001", "case_id": "course-t071", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "9b94dd55-43b3-4507-be8e-74d4dc6df333", "cost_usd": 0.00299965}
+{"event": "reserved", "attempt_id": "44378bab-9b44-4c34-a5a7-d24d9af37010", "run_id": "baseline-2048-001", "case_id": "course-t045", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "44378bab-9b44-4c34-a5a7-d24d9af37010", "cost_usd": 0.00253065}
+{"event": "reserved", "attempt_id": "3e7cca08-d8e3-462e-95c9-15602ebc5b48", "run_id": "baseline-2048-001", "case_id": "course-t046", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3e7cca08-d8e3-462e-95c9-15602ebc5b48", "cost_usd": 0.00553115}
+{"event": "reserved", "attempt_id": "8b66c10c-5e9d-4fdc-831b-5b370b6df1ab", "run_id": "baseline-2048-001", "case_id": "course-t091", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "8b66c10c-5e9d-4fdc-831b-5b370b6df1ab", "cost_usd": 0.00244125}
+{"event": "reserved", "attempt_id": "85dd7230-0a6d-4103-8e32-db4dd6553d7e", "run_id": "baseline-2048-001", "case_id": "course-t041", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "85dd7230-0a6d-4103-8e32-db4dd6553d7e", "cost_usd": 0.0020964}
+{"event": "reserved", "attempt_id": "b94fe882-9e11-45c0-a94e-e2624f1eedb0", "run_id": "baseline-2048-001", "case_id": "course-t029", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b94fe882-9e11-45c0-a94e-e2624f1eedb0", "cost_usd": 0.00235415}
+{"event": "reserved", "attempt_id": "31e70b02-9ad9-4e03-b146-48c75e222b2d", "run_id": "baseline-2048-001", "case_id": "course-t097", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "31e70b02-9ad9-4e03-b146-48c75e222b2d", "cost_usd": 0.00236615}
+{"event": "reserved", "attempt_id": "33fad8c6-2db4-426a-90f5-50ecb9395b11", "run_id": "baseline-2048-001", "case_id": "course-t087", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "33fad8c6-2db4-426a-90f5-50ecb9395b11", "cost_usd": 0.0029234}
+{"event": "reserved", "attempt_id": "168c8c26-b882-4a00-8454-db1bbd03cb6c", "run_id": "baseline-2048-001", "case_id": "course-t027", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "168c8c26-b882-4a00-8454-db1bbd03cb6c", "cost_usd": 0.00329515}
+{"event": "reserved", "attempt_id": "c8b3c588-e3e2-4023-a19a-246e28a9d4c7", "run_id": "baseline-2048-001", "case_id": "course-t057", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "c8b3c588-e3e2-4023-a19a-246e28a9d4c7", "cost_usd": 0.00308415}
+{"event": "reserved", "attempt_id": "d76d26c7-d9fb-43f5-8ecc-53483bf9769a", "run_id": "baseline-2048-001", "case_id": "course-t017", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d76d26c7-d9fb-43f5-8ecc-53483bf9769a", "cost_usd": 0.00238365}
+{"event": "reserved", "attempt_id": "86a95187-4e3d-42d1-8773-e67c23e43666", "run_id": "baseline-2048-001", "case_id": "course-t023", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "86a95187-4e3d-42d1-8773-e67c23e43666", "cost_usd": 0.0021414}
+{"event": "reserved", "attempt_id": "43086fcb-5a2e-4594-b56b-755c8bc16390", "run_id": "baseline-2048-001", "case_id": "course-t037", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "43086fcb-5a2e-4594-b56b-755c8bc16390", "cost_usd": 0.00209415}
+{"event": "reserved", "attempt_id": "8047d598-1c9f-469d-820a-18b3f44bd8b2", "run_id": "baseline-2048-001", "case_id": "course-t081", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "8047d598-1c9f-469d-820a-18b3f44bd8b2", "cost_usd": 0.00274315}
+{"event": "reserved", "attempt_id": "745b54d2-d7cf-4ba5-a2d0-915cf9fb7c15", "run_id": "baseline-2048-001", "case_id": "course-t040", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "745b54d2-d7cf-4ba5-a2d0-915cf9fb7c15", "cost_usd": 0.0023044}
+{"event": "reserved", "attempt_id": "86c259b8-ce1b-4c25-8bf0-6c4e4b2d1637", "run_id": "baseline-2048-001", "case_id": "course-t054", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "86c259b8-ce1b-4c25-8bf0-6c4e4b2d1637", "cost_usd": 0.0020889}
+{"event": "reserved", "attempt_id": "43bf509b-efa7-441c-b7de-2d764443424d", "run_id": "baseline-2048-001", "case_id": "course-t076", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "43bf509b-efa7-441c-b7de-2d764443424d", "cost_usd": 0.0026774}
+{"event": "reserved", "attempt_id": "792bf4fa-1506-4f4e-a853-07347d21ad18", "run_id": "baseline-2048-001", "case_id": "course-t080", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "792bf4fa-1506-4f4e-a853-07347d21ad18", "cost_usd": 0.0026439}
+{"event": "reserved", "attempt_id": "85548c0a-fa4b-4724-b2ee-493ed1ff8b3b", "run_id": "baseline-2048-001", "case_id": "course-t049", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "85548c0a-fa4b-4724-b2ee-493ed1ff8b3b", "cost_usd": 0.00261515}
+{"event": "reserved", "attempt_id": "8a30baa1-30f2-4662-8468-6d5cc5eaca1a", "run_id": "baseline-2048-001", "case_id": "course-t033", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "8a30baa1-30f2-4662-8468-6d5cc5eaca1a", "cost_usd": 0.0020639}
+{"event": "reserved", "attempt_id": "60ec2f29-dfc9-47a7-aa52-4c6b556230fe", "run_id": "baseline-2048-001", "case_id": "course-t008", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "60ec2f29-dfc9-47a7-aa52-4c6b556230fe", "cost_usd": 0.00272615}
+{"event": "reserved", "attempt_id": "1ff1b9ad-bdc9-4bbb-b327-7894e703762c", "run_id": "baseline-2048-001", "case_id": "course-t028", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "1ff1b9ad-bdc9-4bbb-b327-7894e703762c", "cost_usd": 0.0029299}
+{"event": "reserved", "attempt_id": "348363e4-ef7e-4c06-8bf9-0683b81a6a9d", "run_id": "baseline-2048-001", "case_id": "course-t077", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "348363e4-ef7e-4c06-8bf9-0683b81a6a9d", "cost_usd": 0.0024644}
+{"event": "reserved", "attempt_id": "889356e1-3bb3-4938-b715-1be7b3b9726e", "run_id": "baseline-2048-001", "case_id": "course-t084", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "889356e1-3bb3-4938-b715-1be7b3b9726e", "cost_usd": 0.00199615}
+{"event": "reserved", "attempt_id": "ef2e8990-fb73-4607-8bba-ed8685e5fe75", "run_id": "baseline-2048-001", "case_id": "course-t059", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ef2e8990-fb73-4607-8bba-ed8685e5fe75", "cost_usd": 0.0042944}
+{"event": "reserved", "attempt_id": "dbdb3406-6b6d-4a68-9e28-281477614b3c", "run_id": "baseline-2048-001", "case_id": "course-t002", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "dbdb3406-6b6d-4a68-9e28-281477614b3c", "cost_usd": 0.00272265}
+{"event": "reserved", "attempt_id": "5d134a1c-8436-4b3b-a513-ec5432af126d", "run_id": "baseline-2048-001", "case_id": "course-t032", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "5d134a1c-8436-4b3b-a513-ec5432af126d", "cost_usd": 0.00260515}
+{"event": "reserved", "attempt_id": "f1445001-850d-4f4b-aa4d-bf4102530b76", "run_id": "baseline-2048-001", "case_id": "course-t009", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "f1445001-850d-4f4b-aa4d-bf4102530b76", "cost_usd": 0.0030654}
+{"event": "reserved", "attempt_id": "9b8dee67-de2a-4f27-962f-dbb8ab7a00f3", "run_id": "baseline-2048-001", "case_id": "course-t000", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "9b8dee67-de2a-4f27-962f-dbb8ab7a00f3", "cost_usd": 0.0022769}
+{"event": "reserved", "attempt_id": "1cc4c29e-1c3a-4bda-adfe-a42defee6f60", "run_id": "baseline-2048-001", "case_id": "course-t070", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "1cc4c29e-1c3a-4bda-adfe-a42defee6f60", "cost_usd": 0.00340715}
+{"event": "reserved", "attempt_id": "1199be9f-7a2d-4458-b67b-1dba245e1312", "run_id": "baseline-2048-001", "case_id": "course-t031", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "1199be9f-7a2d-4458-b67b-1dba245e1312", "cost_usd": 0.0026409}
+{"event": "reserved", "attempt_id": "6a064fa2-0e56-41ac-9552-bcbd3ab8d90a", "run_id": "baseline-2048-001", "case_id": "course-t052", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "6a064fa2-0e56-41ac-9552-bcbd3ab8d90a", "cost_usd": 0.00208015}
+{"event": "reserved", "attempt_id": "f391fb3e-ba02-457e-8460-dc011f29d823", "run_id": "baseline-2048-001", "case_id": "course-t050", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "f391fb3e-ba02-457e-8460-dc011f29d823", "cost_usd": 0.0024274}
+{"event": "reserved", "attempt_id": "e59e1129-45df-47ee-9c88-013b034c028b", "run_id": "baseline-2048-001", "case_id": "course-t044", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "e59e1129-45df-47ee-9c88-013b034c028b", "cost_usd": 0.0043299}
+{"event": "reserved", "attempt_id": "d92d87e0-cd76-4ddb-97d2-537b9bd825e9", "run_id": "baseline-2048-001", "case_id": "course-t004", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d92d87e0-cd76-4ddb-97d2-537b9bd825e9", "cost_usd": 0.0028599}
+{"event": "reserved", "attempt_id": "cc2eeca7-05de-4d69-897d-db8edfc306a8", "run_id": "baseline-2048-001", "case_id": "course-t013", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "cc2eeca7-05de-4d69-897d-db8edfc306a8", "cost_usd": 0.00302415}
+{"event": "reserved", "attempt_id": "bf32473d-337f-4ab4-b459-d0aadca73d8b", "run_id": "baseline-2048-001", "case_id": "course-t053", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "bf32473d-337f-4ab4-b459-d0aadca73d8b", "cost_usd": 0.00303365}
+{"event": "reserved", "attempt_id": "a9ca378e-878c-4b84-88f8-d1324f755e82", "run_id": "baseline-2048-001", "case_id": "course-t056", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "a9ca378e-878c-4b84-88f8-d1324f755e82", "cost_usd": 0.0033579}
+{"event": "reserved", "attempt_id": "fbd499de-a108-4710-b6ee-5dca522c3cd6", "run_id": "baseline-2048-001", "case_id": "course-t024", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "fbd499de-a108-4710-b6ee-5dca522c3cd6", "cost_usd": 0.0030854}
+{"event": "reserved", "attempt_id": "1649baf2-5499-44ec-815c-fda47bdedb12", "run_id": "baseline-2048-001", "case_id": "course-t058", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "1649baf2-5499-44ec-815c-fda47bdedb12", "cost_usd": 0.00401465}
+{"event": "reserved", "attempt_id": "8385a74a-0c03-4bed-928c-629ec40a22f5", "run_id": "baseline-2048-001", "case_id": "course-t096", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "8385a74a-0c03-4bed-928c-629ec40a22f5", "cost_usd": 0.0025274}
+{"event": "reserved", "attempt_id": "57419fe0-2c8d-41a0-b130-676b251e1c55", "run_id": "baseline-2048-001", "case_id": "course-t069", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "57419fe0-2c8d-41a0-b130-676b251e1c55", "cost_usd": 0.0023244}
+{"event": "reserved", "attempt_id": "03db2e18-4604-4a89-8c40-3fb6c1f85b32", "run_id": "improved-2048-001", "case_id": "course-t038", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "03db2e18-4604-4a89-8c40-3fb6c1f85b32", "cost_usd": 0.0027351}
+{"event": "reserved", "attempt_id": "da218447-bb50-4b45-8b09-6e2734b9761e", "run_id": "improved-2048-001", "case_id": "course-t010", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "da218447-bb50-4b45-8b09-6e2734b9761e", "cost_usd": 0.00239135}
+{"event": "reserved", "attempt_id": "a60361e9-b71b-4ad1-a9a7-c2a479b007a8", "run_id": "improved-2048-001", "case_id": "course-t035", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "a60361e9-b71b-4ad1-a9a7-c2a479b007a8", "cost_usd": 0.002776}
+{"event": "reserved", "attempt_id": "58b5132b-80fd-4ee8-8541-d9227f5e5545", "run_id": "improved-2048-001", "case_id": "course-t098", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "58b5132b-80fd-4ee8-8541-d9227f5e5545", "cost_usd": 0.0022396}
+{"event": "reserved", "attempt_id": "96d945a9-3dd2-4108-aa49-496b38a36617", "run_id": "improved-2048-001", "case_id": "course-t092", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "96d945a9-3dd2-4108-aa49-496b38a36617", "cost_usd": 0.002549}
+{"event": "reserved", "attempt_id": "50926e73-b57e-4e57-9c58-b3af0384218e", "run_id": "improved-2048-001", "case_id": "course-t018", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "50926e73-b57e-4e57-9c58-b3af0384218e", "cost_usd": 0.0032761}
+{"event": "reserved", "attempt_id": "56665ae6-f63b-48eb-9f2a-f72ced85ebab", "run_id": "improved-2048-001", "case_id": "course-t060", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "56665ae6-f63b-48eb-9f2a-f72ced85ebab", "cost_usd": 0.0030421}
+{"event": "reserved", "attempt_id": "fc17dfee-5dd9-4dec-92bf-91374a0dfa89", "run_id": "improved-2048-001", "case_id": "course-t039", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "fc17dfee-5dd9-4dec-92bf-91374a0dfa89", "cost_usd": 0.00237575}
+{"event": "reserved", "attempt_id": "f206be70-d379-4994-8b70-df9fc0da63fc", "run_id": "improved-2048-001", "case_id": "course-t026", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "f206be70-d379-4994-8b70-df9fc0da63fc", "cost_usd": 0.00210225}
+{"event": "reserved", "attempt_id": "d4e26380-9ba4-4a48-bbcd-f7ea3f8eac2a", "run_id": "improved-2048-001", "case_id": "course-t094", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d4e26380-9ba4-4a48-bbcd-f7ea3f8eac2a", "cost_usd": 0.00258825}
+{"event": "reserved", "attempt_id": "3bab6c2d-f2a9-4da8-9c60-4b19dbb07c67", "run_id": "improved-2048-001", "case_id": "course-t086", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3bab6c2d-f2a9-4da8-9c60-4b19dbb07c67", "cost_usd": 0.0026445}
+{"event": "reserved", "attempt_id": "f282b07b-28f1-408b-96d0-f75cd2e84270", "run_id": "improved-2048-001", "case_id": "course-t012", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "f282b07b-28f1-408b-96d0-f75cd2e84270", "cost_usd": 0.00233125}
+{"event": "reserved", "attempt_id": "c9305e2d-f089-4c07-bc6b-edbefa6f7d81", "run_id": "improved-2048-001", "case_id": "course-t099", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "c9305e2d-f089-4c07-bc6b-edbefa6f7d81", "cost_usd": 0.00260475}
+{"event": "reserved", "attempt_id": "2a49863a-4515-408c-a725-584ad3346f80", "run_id": "improved-2048-001", "case_id": "course-t074", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2a49863a-4515-408c-a725-584ad3346f80", "cost_usd": 0.00298375}
+{"event": "reserved", "attempt_id": "9689474c-bbb8-4d5e-adc2-2ab7a0a73d25", "run_id": "improved-2048-001", "case_id": "course-t001", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "9689474c-bbb8-4d5e-adc2-2ab7a0a73d25", "cost_usd": 0.002866}
+{"event": "reserved", "attempt_id": "11c3ab0e-e2ef-405e-9bf6-430be548b802", "run_id": "improved-2048-001", "case_id": "course-t011", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "11c3ab0e-e2ef-405e-9bf6-430be548b802", "cost_usd": 0.00179575}
+{"event": "reserved", "attempt_id": "d9305161-52ea-47a5-89c2-1daba068794d", "run_id": "improved-2048-001", "case_id": "course-t030", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d9305161-52ea-47a5-89c2-1daba068794d", "cost_usd": 0.00246375}
+{"event": "reserved", "attempt_id": "175d1271-fe75-4b6e-a4a1-df82e39ec173", "run_id": "improved-2048-001", "case_id": "course-t021", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "175d1271-fe75-4b6e-a4a1-df82e39ec173", "cost_usd": 0.00216375}
+{"event": "reserved", "attempt_id": "212b8e0e-e952-46a0-b25c-41bf9f89ab68", "run_id": "improved-2048-001", "case_id": "course-t042", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "212b8e0e-e952-46a0-b25c-41bf9f89ab68", "cost_usd": 0.00197675}
+{"event": "reserved", "attempt_id": "4a81b16a-3911-4cd7-bc22-a29ffaaf4a0e", "run_id": "improved-2048-001", "case_id": "course-t015", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "4a81b16a-3911-4cd7-bc22-a29ffaaf4a0e", "cost_usd": 0.00194525}
+{"event": "reserved", "attempt_id": "3496720c-c73b-4379-a40f-7d2d214ccccd", "run_id": "improved-2048-001", "case_id": "course-t067", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3496720c-c73b-4379-a40f-7d2d214ccccd", "cost_usd": 0.00271}
+{"event": "reserved", "attempt_id": "00c2c7ba-254c-4c7d-a5d3-2fb7f1285c56", "run_id": "improved-2048-001", "case_id": "course-t075", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "00c2c7ba-254c-4c7d-a5d3-2fb7f1285c56", "cost_usd": 0.002058}
+{"event": "reserved", "attempt_id": "50822b03-b09b-4bbb-ace6-7cd4507f829e", "run_id": "improved-2048-001", "case_id": "course-t082", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "50822b03-b09b-4bbb-ace6-7cd4507f829e", "cost_usd": 0.00237825}
+{"event": "reserved", "attempt_id": "277d35c9-cc0b-46cc-a188-94158fc67831", "run_id": "improved-2048-001", "case_id": "course-t095", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "277d35c9-cc0b-46cc-a188-94158fc67831", "cost_usd": 0.00211175}
+{"event": "reserved", "attempt_id": "b10aebab-042b-4426-9d83-5844ab96bb7d", "run_id": "improved-2048-001", "case_id": "course-t048", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b10aebab-042b-4426-9d83-5844ab96bb7d", "cost_usd": 0.00289525}
+{"event": "reserved", "attempt_id": "c7c9d40c-ec05-458c-b67f-fc37b0985b6a", "run_id": "improved-2048-001", "case_id": "course-t020", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "c7c9d40c-ec05-458c-b67f-fc37b0985b6a", "cost_usd": 0.002922}
+{"event": "reserved", "attempt_id": "03109b5f-5eff-4fb5-b594-8077ddee1e3b", "run_id": "improved-2048-001", "case_id": "course-t065", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "03109b5f-5eff-4fb5-b594-8077ddee1e3b", "cost_usd": 0.002699}
+{"event": "reserved", "attempt_id": "0811cf66-9055-4afe-8719-720366e468e8", "run_id": "improved-2048-001", "case_id": "course-t062", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "0811cf66-9055-4afe-8719-720366e468e8", "cost_usd": 0.0023425}
+{"event": "reserved", "attempt_id": "3eb95972-ed5e-472f-8d60-01774486a077", "run_id": "improved-2048-001", "case_id": "course-t063", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3eb95972-ed5e-472f-8d60-01774486a077", "cost_usd": 0.00144525}
+{"event": "reserved", "attempt_id": "15a7f28c-2948-41f1-b44a-000f4f6ac1ef", "run_id": "improved-2048-001", "case_id": "course-t007", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "15a7f28c-2948-41f1-b44a-000f4f6ac1ef", "cost_usd": 0.002058}
+{"event": "reserved", "attempt_id": "2b49545c-bb7f-4402-89f4-32ccc360614d", "run_id": "improved-2048-001", "case_id": "course-t073", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2b49545c-bb7f-4402-89f4-32ccc360614d", "cost_usd": 0.0026215}
+{"event": "reserved", "attempt_id": "9d09a1da-daf8-4653-8d29-020db6fc12a6", "run_id": "improved-2048-001", "case_id": "course-t064", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "9d09a1da-daf8-4653-8d29-020db6fc12a6", "cost_usd": 0.0027465}
+{"event": "reserved", "attempt_id": "6559783a-b753-4d3f-8c79-27c51c1a1628", "run_id": "improved-2048-001", "case_id": "course-t078", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "6559783a-b753-4d3f-8c79-27c51c1a1628", "cost_usd": 0.003054}
+{"event": "reserved", "attempt_id": "9899337b-6d9b-43d0-9c15-ebca81e4dbda", "run_id": "improved-2048-001", "case_id": "course-t085", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "9899337b-6d9b-43d0-9c15-ebca81e4dbda", "cost_usd": 0.00214125}
+{"event": "reserved", "attempt_id": "8313a60d-34cd-4323-8993-018655e473c7", "run_id": "improved-2048-001", "case_id": "course-t051", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "8313a60d-34cd-4323-8993-018655e473c7", "cost_usd": 0.00271475}
+{"event": "reserved", "attempt_id": "76f516ba-60f4-4c08-9c72-b741dbb44994", "run_id": "improved-2048-001", "case_id": "course-t016", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "76f516ba-60f4-4c08-9c72-b741dbb44994", "cost_usd": 0.00338625}
+{"event": "reserved", "attempt_id": "b86c5aaa-31ed-4cea-bd07-5a3a534994e6", "run_id": "improved-2048-001", "case_id": "course-t079", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b86c5aaa-31ed-4cea-bd07-5a3a534994e6", "cost_usd": 0.0021845}
+{"event": "reserved", "attempt_id": "9945fd7c-77fb-434d-974c-7405d70deb67", "run_id": "improved-2048-001", "case_id": "course-t019", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "9945fd7c-77fb-434d-974c-7405d70deb67", "cost_usd": 0.00278425}
+{"event": "reserved", "attempt_id": "0fed86d8-a5ba-4fb6-b628-dfafe3b8bfde", "run_id": "improved-2048-001", "case_id": "course-t005", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "0fed86d8-a5ba-4fb6-b628-dfafe3b8bfde", "cost_usd": 0.002209}
+{"event": "reserved", "attempt_id": "9f0cf030-09d1-4fcd-bab5-75344249de57", "run_id": "improved-2048-001", "case_id": "course-t036", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "9f0cf030-09d1-4fcd-bab5-75344249de57", "cost_usd": 0.00248175}
+{"event": "reserved", "attempt_id": "9b4a2a2e-f2c1-474d-b9be-a5e2ed888fb8", "run_id": "improved-2048-001", "case_id": "course-t055", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "9b4a2a2e-f2c1-474d-b9be-a5e2ed888fb8", "cost_usd": 0.00293525}
+{"event": "reserved", "attempt_id": "3c88d8da-2073-4a1e-8e33-0453d387ca13", "run_id": "improved-2048-001", "case_id": "course-t068", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3c88d8da-2073-4a1e-8e33-0453d387ca13", "cost_usd": 0.0032485}
+{"event": "reserved", "attempt_id": "6fa73034-8c4e-4e2c-b9d5-201abd04c595", "run_id": "improved-2048-001", "case_id": "course-t014", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "6fa73034-8c4e-4e2c-b9d5-201abd04c595", "cost_usd": 0.00237425}
+{"event": "reserved", "attempt_id": "0ac9643e-129e-4969-a7a9-84d5b4ff1fe0", "run_id": "improved-2048-001", "case_id": "course-t034", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "0ac9643e-129e-4969-a7a9-84d5b4ff1fe0", "cost_usd": 0.00299925}
+{"event": "reserved", "attempt_id": "85baaab0-92c3-459a-9477-6753353e7718", "run_id": "improved-2048-001", "case_id": "course-t088", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "85baaab0-92c3-459a-9477-6753353e7718", "cost_usd": 0.0026285}
+{"event": "reserved", "attempt_id": "a013f6dc-823d-4ec2-87d8-0c61747dd735", "run_id": "improved-2048-001", "case_id": "course-t022", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "a013f6dc-823d-4ec2-87d8-0c61747dd735", "cost_usd": 0.00233425}
+{"event": "reserved", "attempt_id": "971f21ae-27de-4e70-be34-849734c041ba", "run_id": "improved-2048-001", "case_id": "course-t003", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "971f21ae-27de-4e70-be34-849734c041ba", "cost_usd": 0.0022455}
+{"event": "reserved", "attempt_id": "333c60a4-fb05-4984-a90e-40782b3419d9", "run_id": "improved-2048-001", "case_id": "course-t090", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "333c60a4-fb05-4984-a90e-40782b3419d9", "cost_usd": 0.0026405}
+{"event": "reserved", "attempt_id": "ef655ff3-6e4b-41d6-a9f4-cd3365d9f746", "run_id": "improved-2048-001", "case_id": "course-t047", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ef655ff3-6e4b-41d6-a9f4-cd3365d9f746", "cost_usd": 0.00197675}
+{"event": "reserved", "attempt_id": "11a085ee-4962-4995-94ed-21a3b5b64a96", "run_id": "improved-2048-001", "case_id": "course-t061", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "11a085ee-4962-4995-94ed-21a3b5b64a96", "cost_usd": 0.00207375}
+{"event": "reserved", "attempt_id": "e6cebe4c-4563-4111-af63-38674f3f0caf", "run_id": "improved-2048-001", "case_id": "course-t089", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "e6cebe4c-4563-4111-af63-38674f3f0caf", "cost_usd": 0.00181775}
+{"event": "reserved", "attempt_id": "b63f6698-eb79-4cae-a793-0f310d01fab1", "run_id": "improved-2048-001", "case_id": "course-t043", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b63f6698-eb79-4cae-a793-0f310d01fab1", "cost_usd": 0.00236}
+{"event": "reserved", "attempt_id": "2dc52a95-abc6-4fbe-bcd2-3ee5fb6025f3", "run_id": "improved-2048-001", "case_id": "course-t025", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2dc52a95-abc6-4fbe-bcd2-3ee5fb6025f3", "cost_usd": 0.00365975}
+{"event": "reserved", "attempt_id": "196006c1-d1d9-4e69-a7b8-10830a60a39c", "run_id": "improved-2048-001", "case_id": "course-t072", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "196006c1-d1d9-4e69-a7b8-10830a60a39c", "cost_usd": 0.0020525}
+{"event": "reserved", "attempt_id": "e1bec74e-7925-4058-97d3-9282dc57e6ac", "run_id": "improved-2048-001", "case_id": "course-t066", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "e1bec74e-7925-4058-97d3-9282dc57e6ac", "cost_usd": 0.0030755}
+{"event": "reserved", "attempt_id": "8b5952bf-dc85-424d-b525-4b0e015468b5", "run_id": "improved-2048-001", "case_id": "course-t093", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "8b5952bf-dc85-424d-b525-4b0e015468b5", "cost_usd": 0.002374}
+{"event": "reserved", "attempt_id": "e577d9fe-f8e2-488d-abc9-535522203452", "run_id": "improved-2048-001", "case_id": "course-t083", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "e577d9fe-f8e2-488d-abc9-535522203452", "cost_usd": 0.0087895}
+{"event": "reserved", "attempt_id": "da58d6c5-5a96-47bb-9e2c-cdb5cf29f984", "run_id": "improved-2048-001", "case_id": "course-t006", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "da58d6c5-5a96-47bb-9e2c-cdb5cf29f984", "cost_usd": 0.00316725}
+{"event": "reserved", "attempt_id": "d06463fd-4172-4087-931a-d8ebd89c5aad", "run_id": "improved-2048-001", "case_id": "course-t071", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d06463fd-4172-4087-931a-d8ebd89c5aad", "cost_usd": 0.00336625}
+{"event": "reserved", "attempt_id": "c407264c-5f74-4ea6-9e53-4826739d952b", "run_id": "improved-2048-001", "case_id": "course-t045", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "c407264c-5f74-4ea6-9e53-4826739d952b", "cost_usd": 0.00262525}
+{"event": "reserved", "attempt_id": "68783644-54e2-4d1f-9f36-4a5368b3459e", "run_id": "improved-2048-001", "case_id": "course-t046", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "68783644-54e2-4d1f-9f36-4a5368b3459e", "cost_usd": 0.0026805}
+{"event": "reserved", "attempt_id": "87dae46e-0cce-4f8d-80c7-7e200bd8b760", "run_id": "improved-2048-001", "case_id": "course-t091", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "87dae46e-0cce-4f8d-80c7-7e200bd8b760", "cost_usd": 0.0028546}
+{"event": "reserved", "attempt_id": "d93d2ab9-b526-4af2-a353-9ae8f0588b8d", "run_id": "improved-2048-001", "case_id": "course-t041", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d93d2ab9-b526-4af2-a353-9ae8f0588b8d", "cost_usd": 0.00250975}
+{"event": "reserved", "attempt_id": "26e07b3b-09f6-46ab-9639-b618ee2e0c0d", "run_id": "improved-2048-001", "case_id": "course-t029", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "26e07b3b-09f6-46ab-9639-b618ee2e0c0d", "cost_usd": 0.00283975}
+{"event": "reserved", "attempt_id": "69753399-fcc7-4ace-859a-dc9281a56317", "run_id": "improved-2048-001", "case_id": "course-t097", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "69753399-fcc7-4ace-859a-dc9281a56317", "cost_usd": 0.0033065}
+{"event": "reserved", "attempt_id": "1f3bcc7a-599d-4d48-b849-be650dc4dee7", "run_id": "improved-2048-001", "case_id": "course-t087", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "1f3bcc7a-599d-4d48-b849-be650dc4dee7", "cost_usd": 0.00125425}
+{"event": "reserved", "attempt_id": "ca84be1d-896a-4d0d-9e2a-0456a10c73b9", "run_id": "improved-2048-001", "case_id": "course-t027", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ca84be1d-896a-4d0d-9e2a-0456a10c73b9", "cost_usd": 0.00235275}
+{"event": "reserved", "attempt_id": "7b024a89-6123-4f94-aaf2-ec58d9b78111", "run_id": "improved-2048-001", "case_id": "course-t057", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "7b024a89-6123-4f94-aaf2-ec58d9b78111", "cost_usd": 0.00532925}
+{"event": "reserved", "attempt_id": "c9d9f42a-a37b-4a23-a67c-0bf09c35531b", "run_id": "improved-2048-001", "case_id": "course-t017", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "c9d9f42a-a37b-4a23-a67c-0bf09c35531b", "cost_usd": 0.00241025}
+{"event": "reserved", "attempt_id": "2cadd154-f209-4119-a131-0338318a3dde", "run_id": "improved-2048-001", "case_id": "course-t023", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2cadd154-f209-4119-a131-0338318a3dde", "cost_usd": 0.00193425}
+{"event": "reserved", "attempt_id": "75714e73-e175-4f4e-b593-69301e2823b0", "run_id": "improved-2048-001", "case_id": "course-t037", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "75714e73-e175-4f4e-b593-69301e2823b0", "cost_usd": 0.00257975}
+{"event": "reserved", "attempt_id": "17b8b188-3594-45ef-9949-11a5a54fe4af", "run_id": "improved-2048-001", "case_id": "course-t081", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "17b8b188-3594-45ef-9949-11a5a54fe4af", "cost_usd": 0.001941}
+{"event": "reserved", "attempt_id": "db21ea54-4b96-49b0-b84c-35336033fa9d", "run_id": "improved-2048-001", "case_id": "course-t040", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "db21ea54-4b96-49b0-b84c-35336033fa9d", "cost_usd": 0.0023565}
+{"event": "reserved", "attempt_id": "8d3c7399-d922-4deb-a5f9-a515f74f0637", "run_id": "improved-2048-001", "case_id": "course-t054", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "8d3c7399-d922-4deb-a5f9-a515f74f0637", "cost_usd": 0.002549}
+{"event": "reserved", "attempt_id": "466908fe-8d1f-4d8f-9fa3-5cf7434ef62b", "run_id": "improved-2048-001", "case_id": "course-t076", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "466908fe-8d1f-4d8f-9fa3-5cf7434ef62b", "cost_usd": 0.002789}
+{"event": "reserved", "attempt_id": "2d054e80-1e03-4f1a-9f01-1887f0fac9a9", "run_id": "improved-2048-001", "case_id": "course-t080", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2d054e80-1e03-4f1a-9f01-1887f0fac9a9", "cost_usd": 0.00347375}
+{"event": "reserved", "attempt_id": "ed5a6b04-2be6-4346-a777-b0050d461df1", "run_id": "improved-2048-001", "case_id": "course-t049", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ed5a6b04-2be6-4346-a777-b0050d461df1", "cost_usd": 0.003275}
+{"event": "reserved", "attempt_id": "82d92f4e-a7ba-4aa6-b124-cbb1cc383691", "run_id": "improved-2048-001", "case_id": "course-t033", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "82d92f4e-a7ba-4aa6-b124-cbb1cc383691", "cost_usd": 0.00271525}
+{"event": "reserved", "attempt_id": "cf2881bb-ca5c-418b-9bd6-2bf19d025f43", "run_id": "improved-2048-001", "case_id": "course-t008", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "cf2881bb-ca5c-418b-9bd6-2bf19d025f43", "cost_usd": 0.00241275}
+{"event": "reserved", "attempt_id": "d3bb8199-24a2-4906-9940-81f7883411cc", "run_id": "improved-2048-001", "case_id": "course-t028", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d3bb8199-24a2-4906-9940-81f7883411cc", "cost_usd": 0.002115}
+{"event": "reserved", "attempt_id": "cfed58f7-04f9-46e0-8bec-5404d0182265", "run_id": "improved-2048-001", "case_id": "course-t077", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "cfed58f7-04f9-46e0-8bec-5404d0182265", "cost_usd": 0.00261}
+{"event": "reserved", "attempt_id": "00c97bd0-16fc-426f-89bb-9eb5c5cd9e49", "run_id": "improved-2048-001", "case_id": "course-t084", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "00c97bd0-16fc-426f-89bb-9eb5c5cd9e49", "cost_usd": 0.002724}
+{"event": "reserved", "attempt_id": "3a53d973-3ddc-4c36-9be5-4db8d2a026d6", "run_id": "improved-2048-001", "case_id": "course-t059", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3a53d973-3ddc-4c36-9be5-4db8d2a026d6", "cost_usd": 0.006446}
+{"event": "reserved", "attempt_id": "d39fbc2a-488d-4a93-b3e1-d1b153c4eb7f", "run_id": "improved-2048-001", "case_id": "course-t002", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "d39fbc2a-488d-4a93-b3e1-d1b153c4eb7f", "cost_usd": 0.00203525}
+{"event": "reserved", "attempt_id": "2b8404cd-7245-4a62-af31-d734f283f3c2", "run_id": "improved-2048-001", "case_id": "course-t032", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "2b8404cd-7245-4a62-af31-d734f283f3c2", "cost_usd": 0.00216425}
+{"event": "reserved", "attempt_id": "b1181772-613a-4a62-9638-d742d3103f71", "run_id": "improved-2048-001", "case_id": "course-t009", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "b1181772-613a-4a62-9638-d742d3103f71", "cost_usd": 0.00296025}
+{"event": "reserved", "attempt_id": "1890f616-6986-4580-93ee-750eebe95c19", "run_id": "improved-2048-001", "case_id": "course-t000", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "1890f616-6986-4580-93ee-750eebe95c19", "cost_usd": 0.001938}
+{"event": "reserved", "attempt_id": "503fc086-9f5b-418d-8e45-5c19b286545a", "run_id": "improved-2048-001", "case_id": "course-t070", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "503fc086-9f5b-418d-8e45-5c19b286545a", "cost_usd": 0.00356975}
+{"event": "reserved", "attempt_id": "038bb852-6176-4de1-b367-856c50eb03fe", "run_id": "improved-2048-001", "case_id": "course-t031", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "038bb852-6176-4de1-b367-856c50eb03fe", "cost_usd": 0.003203}
+{"event": "reserved", "attempt_id": "f5705b7d-11c2-466c-a440-644021674450", "run_id": "improved-2048-001", "case_id": "course-t052", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "f5705b7d-11c2-466c-a440-644021674450", "cost_usd": 0.00261675}
+{"event": "reserved", "attempt_id": "54388fb8-a79e-4712-8946-aff1849aa6b6", "run_id": "improved-2048-001", "case_id": "course-t050", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "54388fb8-a79e-4712-8946-aff1849aa6b6", "cost_usd": 0.00282375}
+{"event": "reserved", "attempt_id": "786991e3-37d4-443c-bcb0-487dcd654545", "run_id": "improved-2048-001", "case_id": "course-t044", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "786991e3-37d4-443c-bcb0-487dcd654545", "cost_usd": 0.00221875}
+{"event": "reserved", "attempt_id": "3a1ca329-8300-4d3f-88c0-9e059f1a249e", "run_id": "improved-2048-001", "case_id": "course-t004", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3a1ca329-8300-4d3f-88c0-9e059f1a249e", "cost_usd": 0.00275475}
+{"event": "reserved", "attempt_id": "83984945-eaf0-4df6-a385-1aa1f75949e2", "run_id": "improved-2048-001", "case_id": "course-t013", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "83984945-eaf0-4df6-a385-1aa1f75949e2", "cost_usd": 0.00294025}
+{"event": "reserved", "attempt_id": "ef5d9ae0-e6cf-446f-933d-2744bb87d91a", "run_id": "improved-2048-001", "case_id": "course-t053", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "ef5d9ae0-e6cf-446f-933d-2744bb87d91a", "cost_usd": 0.00258}
+{"event": "reserved", "attempt_id": "25526052-6cb7-49ae-9503-d9a661b39190", "run_id": "improved-2048-001", "case_id": "course-t056", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "25526052-6cb7-49ae-9503-d9a661b39190", "cost_usd": 0.00422175}
+{"event": "reserved", "attempt_id": "a0c95df4-13c2-4b83-a5c7-428a6b5d4721", "run_id": "improved-2048-001", "case_id": "course-t024", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "a0c95df4-13c2-4b83-a5c7-428a6b5d4721", "cost_usd": 0.0043445}
+{"event": "reserved", "attempt_id": "3e76fb82-886f-4894-80db-3f88136bea05", "run_id": "improved-2048-001", "case_id": "course-t058", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "3e76fb82-886f-4894-80db-3f88136bea05", "cost_usd": 0.008797}
+{"event": "reserved", "attempt_id": "58aba16d-32c6-4293-abb8-6b031d3e9d5d", "run_id": "improved-2048-001", "case_id": "course-t096", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "58aba16d-32c6-4293-abb8-6b031d3e9d5d", "cost_usd": 0.00266025}
+{"event": "reserved", "attempt_id": "e82db859-1fe9-42b1-bdab-9e036b7e36f5", "run_id": "improved-2048-001", "case_id": "course-t069", "bound_usd": 1.319424}
+{"event": "settled", "attempt_id": "e82db859-1fe9-42b1-bdab-9e036b7e36f5", "cost_usd": 0.00318825}

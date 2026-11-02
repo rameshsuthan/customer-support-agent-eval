@@ -184,3 +184,11 @@ Recommended: implement inline in this session using `superpowers:executing-plans
 ## Implementation checkpoint — November 2
 
 Environment, source reconciliation, review table, classifier, runner, scoring and notebook are implemented offline. 34 tests pass. All 100 case labels are human reviewed; dataset v1 is frozen. The live pilot passed; baseline stopped at a provider HTTP 500 after 9 attempts. Usage reconciliation, baseline completion, failure analysis, improved run and final submission remain pending. See `reports/implementation_status.md`.
+
+## Approved amendment — November 2, 2026
+
+Ramesh approved increasing the output limit and the three-run recommendation: preserve baseline-001 at1024; run baseline-2048-001 with unchanged prompt at2048; then improved-2048-001 with the focused refund-priority edit at2048. The latter pair isolates prompt changes; the first pair isolates the limit change. Dataset/model/other settings stay fixed; $5 ceiling remains. No packaging/manual prompt expansion. Save all failures, no implicit retries.
+
+## Verified delivery checkpoint
+
+All three100-case experiments complete:91%,96%,98% accuracy. The2048 prompt comparison has4fixes and2output-limit regressions. Workbook/report/notebook/demoscript and trace evidence generated.42tests pass, notebook fresh-kernel replay passes with paidflagsfalse, workbook formulas match metrics, and source-tab values/formulas preserved exactly. Known project estimate$.79069535 excludes2unknown originalerrors; conservative exposure$3.42083935 within$5. Recording and course submission remain Ramesh actions.

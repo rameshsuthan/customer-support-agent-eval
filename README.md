@@ -4,7 +4,9 @@ A local evaluation of Meta Muse Spark Open on Fireworks, with LangGraph classifi
 
 ## Current status
 
-The offline dataset, classifier, experiment runner, and scoring tools are implemented. Python 3.12 and dependencies are installed in `.venv`. All 100 labels are reviewed and dataset v1 is frozen. The five-ticket integration pilot completed with five valid/correct responses and estimated inference cost $0.0132835. LangSmith child traces and usage were inspected. The full baseline is complete: 100 cases, 91% accuracy, 0.927 macro F1, and 96% valid responses. Five routing mismatches and four failed responses are preserved. Known baseline cost is $0.23935465; two HTTP 500 calls have unknown costs covered by conservative reservations. The approved budget ceiling is now $5. See [failure analysis](reports/failure_analysis.md). The proposed prompt edit awaits substantive review; the improved experiment, final workbook and demo remain pending.
+The offline dataset, classifier, experiment runner, and scoring tools are implemented. Python 3.12 and dependencies are installed in `.venv`. All 100 labels are reviewed and dataset v1 is frozen. The five-ticket integration pilot completed with five valid/correct responses and estimated inference cost $0.0132835. LangSmith child traces and usage were inspected. Three measured runs are complete on the same 100 reviewed tickets: original 1024-token baseline 91% accuracy; unchanged-prompt2048-token control 96%; focused refund-priority prompt at2048 tokens 98%. The prompt pair has four routing fixes and two output-limit regressions. Valid responses fell from 100% to 98%, so the final version does not meet the 100% validity target.
+
+Deliverables: [final report](reports/final_report.md), [workbook](reports/customer_support_evaluation.xlsx), [notebook](notebooks/customer_support_evaluation.ipynb), and [demo outline](reports/demo_outline.md). The workbook preserves source tabs and adds clearly identified Our sheets. Known project estimate including pilot is $0.79069535, excluding two unknown-cost calls. Conservative exposure is $3.42083935 under the approved $5 ceiling. All 42 offline tests and fresh-kernel analysis replay pass. Ramesh's demo recording and course submission remain pending.
 
 ## Start locally
 
@@ -45,7 +47,7 @@ The freeze operation rejects pending reviews, invalid labels, duplicate IDs, une
 
 The supplied workbook has 150 tickets and 29 failures. The repository CSV has 100 tickets and 8 supplied baseline failures. Only one of the 100 shared IDs has identical ticket text, and some identical texts have conflicting labels. These are different teaching artifacts. See [source reconciliation](reports/source_reconciliation.md).
 
-We use the CSV's fixed texts as our candidate dataset; all labels remain subject to human review. The supplied predictions and 92%→97% scores are reference material, never our measured results. Cases are synthetic and related by seed families. Results on the same cases used for diagnosis do not demonstrate held-out generalization.
+We use the CSV's fixed texts as our candidate dataset; all labels were human reviewed before freezing. The supplied predictions and 92%→97% scores are reference material, never our measured results. Cases are synthetic and related by seed families. Results on the same cases used for diagnosis do not demonstrate held-out generalization.
 
 ## Paid-run safeguards and limits
 
@@ -64,7 +66,7 @@ The pilot must verify current model cap/billing behavior before scaling. No resu
 - `data/source/`: unchanged course references and pinned source manifest.
 - `data/review/`: human decisions, separate from original labels.
 - `data/frozen/`: appears after review and explicit freezing.
-- `prompts/baseline.txt`: simple category descriptions adapted with attribution; improved prompt comes after our baseline analysis.
+- `prompts/baseline.txt`: simple category descriptions adapted with attribution; `prompts/improved.txt` adds the reviewed priority rule.
 - `artifacts/runs/`: our newly measured results only.
 - `reports/`: policy, source evidence, review guide, and eventually final submission.
 

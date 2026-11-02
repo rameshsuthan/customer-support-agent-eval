@@ -1,0 +1,76 @@
+{
+  "endpoint": "https://api.smith.langchain.com",
+  "attempted": 58,
+  "experiment_name": "baseline-2048-001-3a40b201",
+  "experiment_id": "fbf15121-6924-4b0a-9c37-de46208b0b45",
+  "dataset_id": "892c6169-ac98-4d08-b4be-8363f254cc11",
+  "latest_case": "course-t006",
+  "trace_url": "https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/projects/p/fbf15121-6924-4b0a-9c37-de46208b0b45/trace/01a19df8-126e-71c1-8627-f7af5cc5ee92/run/01a19df8-126e-71c1-8627-f7af5cc5ee92?start_time=2026-11-02T20%3A34%3A02.990566%2B00%3A00",
+  "trace_runs": [
+    {
+      "name": "PydanticOutputParser",
+      "type": "parser",
+      "id": "01a19df8-33a0-7704-89ac-7d6319ddb9e7"
+    },
+    {
+      "name": "RunnableLambda",
+      "type": "chain",
+      "id": "01a19df8-339e-7670-a321-a6d626b39378"
+    },
+    {
+      "name": "RunnableLambda",
+      "type": "chain",
+      "id": "01a19df8-339e-7670-a321-a6d508992820"
+    },
+    {
+      "name": "RunnableSequence",
+      "type": "chain",
+      "id": "01a19df8-339d-76a9-a0b4-1ef6dbf24fb8"
+    },
+    {
+      "name": "RunnableParallel<parsed,parsing_error>",
+      "type": "chain",
+      "id": "01a19df8-339d-76a9-a0b4-1ef5b51046a8"
+    },
+    {
+      "name": "RunnableAssign<parsed,parsing_error>",
+      "type": "chain",
+      "id": "01a19df8-339c-764b-9886-cc861b5bf3b0"
+    },
+    {
+      "name": "RunnableWithFallbacks",
+      "type": "chain",
+      "id": "01a19df8-339c-764b-9886-cc85781b3a14"
+    },
+    {
+      "name": "ChatFireworks",
+      "type": "llm",
+      "id": "01a19df8-1272-7395-8dd9-51a3289b04d5"
+    },
+    {
+      "name": "RunnableParallel<raw>",
+      "type": "chain",
+      "id": "01a19df8-1271-77dc-8d6a-b33e6c01ad2b"
+    },
+    {
+      "name": "RunnableSequence",
+      "type": "chain",
+      "id": "01a19df8-1271-77dc-8d6a-b33d9f95a67f"
+    },
+    {
+      "name": "classify",
+      "type": "chain",
+      "id": "01a19df8-1270-7785-81d4-e742e477bddd"
+    },
+    {
+      "name": "LangGraph",
+      "type": "chain",
+      "id": "01a19df8-126f-76de-9c0e-2da668da8678"
+    },
+    {
+      "name": "Target",
+      "type": "chain",
+      "id": "01a19df8-126e-71c1-8627-f7af5cc5ee92"
+    }
+  ]
+}
