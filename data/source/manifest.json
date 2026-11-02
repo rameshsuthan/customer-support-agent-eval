@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/The-Gen-Academy/4A-Customer-Support-Agent-Evaluation",
+  "revision": "ef517b274cf86a2c4fa8ae72fdc89b3dce80f41d",
+  "files": [
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/The-Gen-Academy/4A-Customer-Support-Agent-Evaluation/ef517b274cf86a2c4fa8ae72fdc89b3dce80f41d/README.md",
+      "sha256": "6f2f253e2e6663f7db7cb074e8b75f0e733b763c473fa03a0626bd22dfd32d2e"
+    },
+    {
+      "file": "results_v1.csv",
+      "url": "https://raw.githubusercontent.com/The-Gen-Academy/4A-Customer-Support-Agent-Evaluation/ef517b274cf86a2c4fa8ae72fdc89b3dce80f41d/results_v1.csv",
+      "sha256": "9d2a74df4f74d439ffb5914475e267b0b7ec5c18ab1e14525ee36fcb16b1599a"
+    },
+    {
+      "file": "results_v2.csv",
+      "url": "https://raw.githubusercontent.com/The-Gen-Academy/4A-Customer-Support-Agent-Evaluation/ef517b274cf86a2c4fa8ae72fdc89b3dce80f41d/results_v2.csv",
+      "sha256": "7bd5d490ef5a9442c08593f6ebaeec2b9b3fda1d6025da7cb210e4ea567aa65d"
+    },
+    {
+      "file": "week4_customer_support_evals.ipynb",
+      "url": "https://raw.githubusercontent.com/The-Gen-Academy/4A-Customer-Support-Agent-Evaluation/ef517b274cf86a2c4fa8ae72fdc89b3dce80f41d/week4_customer_support_evals.ipynb",
+      "sha256": "1e220bc017069740e73bc80d1207daae4f2146d428a64e977f19e9c0ba900620"
+    },
+    {
+      "file": "Week 4_ AI Evals (E-Commerce Customer Support Agent).xlsx",
+      "url": "https://raw.githubusercontent.com/The-Gen-Academy/4A-Customer-Support-Agent-Evaluation/ef517b274cf86a2c4fa8ae72fdc89b3dce80f41d/Week%204_%20AI%20Evals%20%28E-Commerce%20Customer%20Support%20Agent%29.xlsx",
+      "sha256": "6c7e9baeda3a0f3a637c7f0c49396c955c0c7ca825511e3444158a0aaa626e71"
+    }
+  ],
+  "license_status": "GitHub license endpoint returned 404; no license assumed."
+}

@@ -1,0 +1,12 @@
+jupyterlab
+langgraph
+langchain-fireworks
+langsmith
+pydantic
+pandas
+scikit-learn
+openpyxl
+python-dotenv
+pytest
+nbclient
+nbformat

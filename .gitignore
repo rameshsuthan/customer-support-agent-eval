@@ -1,0 +1,15 @@
+.venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.superpowers/
+*.egg-info/
+.DS_Store
+test.txt
+*.pem
+*.key
+artifacts/*.lock
