@@ -1,0 +1,8 @@
+Week 4 — Customer Support Agent Evaluation (core track)
+
+Repository: https://github.com/rameshsuthan/customer-support-agent-eval
+Loom: add the recording link here before submitting.
+
+I evaluated Muse Spark Open on Fireworks using 100 human-reviewed e-commerce tickets, a LangGraph classifier and LangSmith traces. I preserved an original 1,024-token baseline (91% accuracy), ran an unchanged-prompt control at 2,048 tokens (96%), then tested one focused damaged-product/refund priority rule at the same limit (98%). The controlled prompt comparison produced four fixes and two output-limit regressions; validity fell from 100% to 98%.
+
+The repository includes the completed workbook, solution PDF, executed notebook, frozen labels, versioned prompts, case-level results and LangSmith evidence. The known project estimate is $0.79069535, excluding two original requests with unknown usage. The same synthetic set was used for diagnosis and reevaluation, so these results do not establish held-out generalization. Optional LLM-as-a-Judge was not attempted.

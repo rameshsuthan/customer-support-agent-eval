@@ -89,7 +89,7 @@ The frozen dataset contains 100 reviewed tickets in 25 synthetic seed families. 
 
 Source: The Gen Academy, https://github.com/The-Gen-Academy/4A-Customer-Support-Agent-Evaluation, revision ef517b274cf86a2c4fa8ae72fdc89b3dce80f41d. Reference workbook tabs are preserved separately from our result sheets. No license was found; materials remain a local course exercise.
 
-The same dataset is used for diagnosis and reevaluation, so gains measure exercise-set improvement rather than independent generalization. Core-track scope is one focused prompt edit over 100 cases, plus the explicitly approved token-limit control. This differs from the generic rubric's 3–4 changes and 30–50 cases. No LLM judge, fine-tuning, RAG or production deployment was attempted.
+The same dataset is used for diagnosis and reevaluation, so gains measure exercise-set improvement rather than independent generalization. Core-track scope is one focused prompt edit over 100 cases, plus the explicitly approved token-limit control. The general handout's 3–4 changes and 30–50 cases belong to the separate Own Use Case track; this project follows the Customer Support checklist. No LLM judge, fine-tuning, RAG or production deployment was attempted.
 
 ## Delivery and demo
 

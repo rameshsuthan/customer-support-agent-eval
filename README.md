@@ -2,11 +2,28 @@
 
 A local evaluation of Meta Muse Spark Open on Fireworks, with LangGraph classification and LangSmith experiments. We review the course tickets, run our own baseline, diagnose failures, and test one focused prompt revision.
 
-## Current status
+## Submission guide
 
-The offline dataset, classifier, experiment runner, and scoring tools are implemented. Python 3.12 and dependencies are installed in `.venv`. All 100 labels are reviewed and dataset v1 is frozen. The five-ticket integration pilot completed with five valid/correct responses and estimated inference cost $0.0132835. LangSmith child traces and usage were inspected. Three measured runs are complete on the same 100 reviewed tickets: original 1024-token baseline 91% accuracy; unchanged-prompt2048-token control 96%; focused refund-priority prompt at2048 tokens 98%. The prompt pair has four routing fixes and two output-limit regressions. Valid responses fell from 100% to 98%, so the final version does not meet the 100% validity target.
+**Customer Support core track.** Start with the [solution PDF](reports/customer_support_solution.pdf), then open the [workbook](reports/customer_support_evaluation.xlsx) and [executed notebook](notebooks/customer_support_evaluation.ipynb). Download the workbook to inspect its sheets.
 
-Deliverables: [final report](reports/final_report.md), [workbook](reports/customer_support_evaluation.xlsx), [notebook](notebooks/customer_support_evaluation.ipynb), and [demo outline](reports/demo_outline.md). The workbook preserves source tabs and adds clearly identified Our sheets. Known project estimate including pilot is $0.79069535, excluding two unknown-cost calls. Conservative exposure is $3.42083935 under the approved $5 ceiling. All 42 offline tests and fresh-kernel analysis replay pass. Ramesh's demo recording and course submission remain pending.
+**Loom recording:** pending. The repository contains the [rehearsal script](reports/DEMO_SCRIPT.md) and [submission checklist](reports/SUBMISSION_CHECKLIST.md). Add the recording URL here before submitting.
+
+| Run | Output limit | Accuracy | Valid responses |
+|---|---:|---:|---:|
+| Original baseline | 1,024 | 91% | 96% |
+| Unchanged-prompt control | 2,048 | 96% | 100% |
+| Focused priority edit | 2,048 | 98% | 98% |
+
+All runs use the same 100 human-reviewed tickets. The controlled prompt comparison has **four routing fixes and two output-limit regressions**. The prompt gain is 96% to 98%; the full 91% to 98% difference also includes a settings change and run variability.
+
+- **Solution and findings:** [PDF](reports/customer_support_solution.pdf), [detailed report](reports/final_report.md), [failure analysis](reports/failure_analysis.md).
+- **Spreadsheet:** the `Our` sheets contain our results. `Our Reviewed Labels` documents the human review; `Our Failure Analysis` covers Steps 1–3; `Our Paired Results` and the prompt files cover Step 4. In `Our Results`, Correct 1 means PASS and 0 means FAIL. Original course tabs are preserved reference material.
+- **Reproducibility:** [frozen dataset](data/frozen/v1), [saved results](artifacts/runs), [prompts](prompts), [agent/evaluation code](src/support_eval), and [tests](tests).
+- **LangSmith:** [control experiment](https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/datasets/892c6169-ac98-4d08-b4be-8363f254cc11/compare?selectedSessions=fbf15121-6924-4b0a-9c37-de46208b0b45), [improved experiment](https://smith.langchain.com/o/82c36783-971e-46c1-862e-a27d43bbcba3/datasets/892c6169-ac98-4d08-b4be-8363f254cc11/compare?selectedSessions=a6ba6566-3751-417b-95cc-0de7e769182f), and [saved inspected trace evidence](reports/trace_evidence). Live links require workspace access.
+
+Known project cost including the pilot: **$0.79069535**, excluding two unknown-cost original requests. Conservative exposure: **$3.42083935** under the approved $5 ceiling. All 42 tests and fresh-kernel analysis replay passed. The notebook's paid flags default to false; saved-results analysis needs no API keys.
+
+AI assistance supported implementation, analysis and documentation. Ramesh reviewed the ground truth and routing policy and approved the experimental design. No demo recording or external course submission is claimed yet.
 
 ## Start locally
 
@@ -74,4 +91,4 @@ The reference files come from [The Gen Academy](https://github.com/The-Gen-Acade
 
 ## Submission scope
 
-Core track: one focused prompt change, reviewed supplied cases, fresh baseline/improved results, workbook, notebook, trace evidence, report and demo. Optional LLM judge work is excluded. The track-specific scope differs from the general handout's 3–4 changes and 30–50 cases; disclose that difference rather than claiming every general-rubric item is satisfied.
+Core track: one focused prompt change, reviewed supplied cases, fresh baseline/improved results, workbook, notebook, trace evidence, report and demo. Optional LLM judge work is excluded. The general handout's 3–4 changes and 30–50 cases belong to the separate Own Use Case track; this project follows the Customer Support checklist.

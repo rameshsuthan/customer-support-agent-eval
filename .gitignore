@@ -13,3 +13,7 @@ test.txt
 *.pem
 *.key
 artifacts/*.lock
+
+# Local artifact rendering/inspection intermediates
+reports/workbook_previews/
+reports/*.inspect.ndjson
