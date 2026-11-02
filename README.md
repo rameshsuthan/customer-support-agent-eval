@@ -4,7 +4,7 @@ A local evaluation of Meta Muse Spark Open on Fireworks, with LangGraph classifi
 
 ## Submission guide
 
-**Customer Support core track.** Start with the [solution PDF](reports/customer_support_solution.pdf), then open the [workbook](reports/customer_support_evaluation.xlsx) and [executed notebook](notebooks/customer_support_evaluation.ipynb). Download the workbook to inspect its sheets.
+**Customer Support core track.** Start with the [submission Word document](reports/customer_support_submission.docx), which includes diagrams and handout-aligned evidence, or the [solution PDF](reports/customer_support_solution.pdf), then open the [workbook](reports/customer_support_evaluation.xlsx) and [executed notebook](notebooks/customer_support_evaluation.ipynb). Download the workbook to inspect its sheets.
 
 **Demo video:** [Watch or download the narrated MP4](reports/video/customer_support_demo.mp4) (5:01, 1080p, standard synthetic voice, captions included). [Transcript](reports/video/transcript.txt) and [SRT captions](reports/video/customer_support_demo.srt) are also available. This is a presentation-style walkthrough of saved project evidence. Loom hosting is still pending if the submission portal requires a Loom URL. See the [submission checklist](reports/SUBMISSION_CHECKLIST.md).
 

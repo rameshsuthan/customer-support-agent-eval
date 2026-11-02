@@ -9,7 +9,7 @@ The repository is the submission package. No ZIP is needed. Requirements are tak
 | Predictions and PASS/FAIL | Our Results: Correct 1 = PASS, 0 = FAIL; statuses retain invalid/provider failures | 300 scored results |
 | Step 1 annotations and Steps 2–3 failure groups/labels | Our Failure Analysis; [detailed analysis](failure_analysis.md) | Ready |
 | Step 4 prompt change and comparison | Our Paired Results; `prompts/improved.txt`; solution PDF | Ready |
-| Solution document | [Solution PDF](customer_support_solution.pdf) and [detailed report](final_report.md) | Ready |
+| Solution document | [Submission DOCX with diagrams](customer_support_submission.docx), [Solution PDF](customer_support_solution.pdf) and [detailed report](final_report.md) | Ready |
 | Executed notebook | [Notebook](../notebooks/customer_support_evaluation.ipynb) | Outputs saved; paid flags off |
 | LangSmith evidence | Links in the solution/report; `trace_evidence/`; each result row has a trace URL | Saved evidence ready; check reviewer access |
 | Demo video | [Narrated MP4](video/customer_support_demo.mp4), [transcript](video/transcript.txt), [demo script](DEMO_SCRIPT.md) | MP4 ready; Loom upload pending if required |
@@ -21,7 +21,7 @@ The repository is the submission package. No ZIP is needed. Requirements are tak
 - [ ] If the portal requires Loom, upload the MP4 to your video-hosting account and add the resulting link to the README and portal submission.
 - [ ] Confirm that the repository link opens for the instructor. For a private repository, grant the required access.
 - [ ] Check instructor access to LangSmith links. If access is unavailable, include screenshots of the t044 fix and t083 regression, showing the ticket ID, input/output, model child and metadata. Saved JSON evidence is already included; do not claim private links are public.
-- [ ] Confirm the portal accepts a repository link; upload the workbook, PDF and notebook separately if it requires file attachments.
+- [ ] Confirm the portal accepts a repository link; upload the workbook, DOCX and notebook separately if it requires file attachments.
 - [ ] Open the pushed branch's README, PDF, workbook download and notebook preview once before submitting.
 
 ## What to say about scope
